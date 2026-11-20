@@ -1,0 +1,296 @@
+{
+  "product_version": "l33t-v3",
+  "products": [
+    {
+      "bytes": 335948619,
+      "collisions": {
+        "2:calculated": 96393,
+        "2:l33t-JK-extrapolated": 1201138,
+        "2:vt0-identity-copy-to-vCO1": 32131,
+        "2:vt0-identity-copy-to-vnu10": 24531,
+        "2:vt0-identity-copy-to-vnu4": 24531,
+        "2:vt0-identity-copy-to-vnu5": 26335,
+        "2:vt0-identity-copy-to-vnu6": 29161,
+        "2:vt0-identity-copy-to-vrock1": 32131,
+        "2:vt0-identity-copy-to-vt3": 32131,
+        "2:vt0-identity-copy-to-vt4": 29646,
+        "3:calculated": 2850,
+        "3:vt0-identity-copy-to-vCO1": 2850,
+        "3:vt0-identity-copy-to-vnu10": 2850,
+        "3:vt0-identity-copy-to-vnu4": 2850,
+        "3:vt0-identity-copy-to-vnu5": 2850,
+        "3:vt0-identity-copy-to-vnu6": 2850,
+        "3:vt0-identity-copy-to-vrock1": 2850,
+        "3:vt0-identity-copy-to-vt1": 2850,
+        "3:vt0-identity-copy-to-vt2": 2850,
+        "3:vt0-identity-copy-to-vt3": 2850,
+        "3:vt0-identity-copy-to-vt4": 2850,
+        "6:calculated": 102018,
+        "6:vt0-identity-copy-to-vCO1": 32131,
+        "6:vt0-identity-copy-to-vnu10": 24531,
+        "6:vt0-identity-copy-to-vnu4": 24531,
+        "6:vt0-identity-copy-to-vnu5": 26335,
+        "6:vt0-identity-copy-to-vnu6": 29161,
+        "6:vt0-identity-copy-to-vrock1": 32131,
+        "6:vt0-identity-copy-to-vt3": 32131,
+        "6:vt0-identity-copy-to-vt4": 29646
+      },
+      "file": "a-12ch3oh-l33t-E2000-J46.dat",
+      "levels": 7600,
+      "levels_by_manifold": {
+        "vCO1": 650,
+        "vnu10": 345,
+        "vnu4": 343,
+        "vnu5": 368,
+        "vnu6": 454,
+        "vrock1": 622,
+        "vt0": 1313,
+        "vt1": 1194,
+        "vt2": 1041,
+        "vt3": 797,
+        "vt4": 473
+      },
+      "radiative": 146635,
+      "sha256": "b405d0ae3c72219c4fdce1d7444705f8ec58af7e0477ab87197cfd0b9befae1a",
+      "sidecars": {
+        "a-12ch3oh.collision-provenance.csv.gz": {
+          "bytes": 13022821,
+          "sha256": "a1f7f34609d1c8b54a47cd12abdf5e82ca09c38f6f033f3e7633887019ed7a57",
+          "uncompressed_sha256": "d4d3cbb64c5523e208d7495bd3b6b2c68aa8d0f8f1098fb60478f1b3b45bb21d",
+          "uncompressed_bytes": 365190036
+        },
+        "a-12ch3oh.levels.csv.gz": {
+          "bytes": 133805,
+          "sha256": "90046a382efcc8e755e2c6c243dfa98adad34280bf4bd0bc15328574bd6e8d76",
+          "uncompressed_sha256": "9c85f27b11f56c7d218c25d18862b0dc8456f406012c52f081970855fc5ac36f",
+          "uncompressed_bytes": 960135
+        },
+        "a-12ch3oh.radiative-ledger.csv.gz": {
+          "bytes": 5306039,
+          "sha256": "00705a3b5cb1dc14f6704a60f24db9a753fb4f920ed6b7efdbeb7dbd6c8db945",
+          "uncompressed_sha256": "e2e3fc3963eec30bbfdc5204b40209c6eabbcaca46556a6818d9a412d57e02f0",
+          "uncompressed_bytes": 22436539
+        }
+      }
+    },
+    {
+      "bytes": 352659004,
+      "collisions": {
+        "2:calculated": 64262,
+        "2:calculated_source_grid_quarantined_180_200K": 32131,
+        "2:l33t-JK-extrapolated": 1285881,
+        "2:vt0-identity-copy-to-vCO1": 32131,
+        "2:vt0-identity-copy-to-vnu10": 25651,
+        "2:vt0-identity-copy-to-vnu4": 25200,
+        "2:vt0-identity-copy-to-vnu5": 26335,
+        "2:vt0-identity-copy-to-vnu6": 29646,
+        "2:vt0-identity-copy-to-vrock1": 32131,
+        "2:vt0-identity-copy-to-vt3": 32131,
+        "2:vt0-identity-copy-to-vt4": 30135,
+        "3:calculated": 2850,
+        "3:vt0-identity-copy-to-vCO1": 2850,
+        "3:vt0-identity-copy-to-vnu10": 2850,
+        "3:vt0-identity-copy-to-vnu4": 2850,
+        "3:vt0-identity-copy-to-vnu5": 2850,
+        "3:vt0-identity-copy-to-vnu6": 2850,
+        "3:vt0-identity-copy-to-vrock1": 2850,
+        "3:vt0-identity-copy-to-vt1": 2850,
+        "3:vt0-identity-copy-to-vt2": 2850,
+        "3:vt0-identity-copy-to-vt3": 2850,
+        "3:vt0-identity-copy-to-vt4": 2850,
+        "6:calculated": 102018,
+        "6:vt0-identity-copy-to-vCO1": 32131,
+        "6:vt0-identity-copy-to-vnu10": 25651,
+        "6:vt0-identity-copy-to-vnu4": 25200,
+        "6:vt0-identity-copy-to-vnu5": 26335,
+        "6:vt0-identity-copy-to-vnu6": 29646,
+        "6:vt0-identity-copy-to-vrock1": 32131,
+        "6:vt0-identity-copy-to-vt3": 32131,
+        "6:vt0-identity-copy-to-vt4": 30135
+      },
+      "file": "e-12ch3oh-l33t-E2000-J46.dat",
+      "levels": 7669,
+      "levels_by_manifold": {
+        "vCO1": 651,
+        "vnu10": 362,
+        "vnu4": 354,
+        "vnu5": 369,
+        "vnu6": 480,
+        "vrock1": 624,
+        "vt0": 1318,
+        "vt1": 1195,
+        "vt2": 1041,
+        "vt3": 801,
+        "vt4": 474
+      },
+      "radiative": 163932,
+      "sha256": "cbc6a7fbdf050d27a255c4c1562f78f072eca46ce7824a795a6c03b3bc96f3f8",
+      "sidecars": {
+        "e-12ch3oh.collision-provenance.csv.gz": {
+          "bytes": 14492901,
+          "sha256": "678db4a7a1f2776935a95a26a1b76c2978ad5d3e21d82273c6c49a6d931a5d89",
+          "uncompressed_sha256": "8824e8a542f15bd08b836d38774dce7a47a26189325dbd3b469893a3524ddb88",
+          "uncompressed_bytes": 379116872
+        },
+        "e-12ch3oh.levels.csv.gz": {
+          "bytes": 157884,
+          "sha256": "bb4627704a0864d4c7ef2aaa5454ae5d1e1c17da846ce53b24e7381304096aa2",
+          "uncompressed_sha256": "95e280f2351aa67b7cfdcfbda896bde693b7a8136db6aebf3e7ba21c25f4b0c4",
+          "uncompressed_bytes": 970654
+        },
+        "e-12ch3oh.radiative-ledger.csv.gz": {
+          "bytes": 6364009,
+          "sha256": "91914ea90452af50b35f488d0df3e748339eee3c8049cb25612f338f4df3f824",
+          "uncompressed_sha256": "c2b6b8a57e6de57e5f60db5ccb4544af7e88a49eb07a67083510fd93db0676db",
+          "uncompressed_bytes": 24861323
+        }
+      }
+    },
+    {
+      "bytes": 341131626,
+      "collisions": {
+        "2:calculated": 96393,
+        "2:l33t-JK-extrapolated": 1229898,
+        "2:vt0-identity-copy-to-vCO1": 32131,
+        "2:vt0-identity-copy-to-vnu10": 24531,
+        "2:vt0-identity-copy-to-vnu4": 24531,
+        "2:vt0-identity-copy-to-vnu5": 26335,
+        "2:vt0-identity-copy-to-vnu6": 29161,
+        "2:vt0-identity-copy-to-vrock1": 32131,
+        "2:vt0-identity-copy-to-vt3": 32131,
+        "2:vt0-identity-copy-to-vt4": 29646,
+        "3:calculated": 2850,
+        "3:vt0-identity-copy-to-vCO1": 2850,
+        "3:vt0-identity-copy-to-vnu10": 2850,
+        "3:vt0-identity-copy-to-vnu4": 2850,
+        "3:vt0-identity-copy-to-vnu5": 2850,
+        "3:vt0-identity-copy-to-vnu6": 2850,
+        "3:vt0-identity-copy-to-vrock1": 2850,
+        "3:vt0-identity-copy-to-vt1": 2850,
+        "3:vt0-identity-copy-to-vt2": 2850,
+        "3:vt0-identity-copy-to-vt3": 2850,
+        "3:vt0-identity-copy-to-vt4": 2850,
+        "6:calculated": 102018,
+        "6:vt0-identity-copy-to-vCO1": 32131,
+        "6:vt0-identity-copy-to-vnu10": 24531,
+        "6:vt0-identity-copy-to-vnu4": 24531,
+        "6:vt0-identity-copy-to-vnu5": 26335,
+        "6:vt0-identity-copy-to-vnu6": 29161,
+        "6:vt0-identity-copy-to-vrock1": 32131,
+        "6:vt0-identity-copy-to-vt3": 32131,
+        "6:vt0-identity-copy-to-vt4": 29646
+      },
+      "file": "a-13ch3oh-l33t-E2000-J46.dat",
+      "levels": 7714,
+      "levels_by_manifold": {
+        "vCO1": 673,
+        "vnu10": 347,
+        "vnu4": 346,
+        "vnu5": 372,
+        "vnu6": 457,
+        "vrock1": 637,
+        "vt0": 1325,
+        "vt1": 1209,
+        "vt2": 1056,
+        "vt3": 813,
+        "vt4": 479
+      },
+      "radiative": 149820,
+      "sha256": "9b50af0e83011b767cda284f8a5aec157e7d89ef9d17b13d018fe57173cc667d",
+      "sidecars": {
+        "a-13ch3oh.collision-provenance.csv.gz": {
+          "bytes": 13546564,
+          "sha256": "a281876c81953b727fbe37b2c1dcd9806634450879c5e5d7d44d0af3d58fbdba",
+          "uncompressed_sha256": "3d4992cd7b970551ee82a0cd1ec052014061c2f5348ce79fafd9030d475bc1fe",
+          "uncompressed_bytes": 483840651
+        },
+        "a-13ch3oh.levels.csv.gz": {
+          "bytes": 137990,
+          "sha256": "a64c5f1ad7bdc45d794ea81cb0a1f1c11c8d25e4ff877cf561a1099c7bd760fe",
+          "uncompressed_sha256": "eaf639b924d0771566545c884d2d8773f398364596105051472cf2ecb53fcfef",
+          "uncompressed_bytes": 1144772
+        },
+        "a-13ch3oh.radiative-ledger.csv.gz": {
+          "bytes": 5387038,
+          "sha256": "8e836f57ced394cbaa64cf0280cb7091569588b7f2b3c2de7c910861fb999c81",
+          "uncompressed_sha256": "944336d10dfa626aea97b9aa3f79a054108c5f68220834ebcb48e6f7250bcb43",
+          "uncompressed_bytes": 22663270
+        }
+      }
+    },
+    {
+      "bytes": 358772640,
+      "collisions": {
+        "2:calculated": 64262,
+        "2:calculated_source_grid_quarantined_180_200K": 32131,
+        "2:l33t-JK-extrapolated": 1319894,
+        "2:vt0-identity-copy-to-vCO1": 32131,
+        "2:vt0-identity-copy-to-vnu10": 25651,
+        "2:vt0-identity-copy-to-vnu4": 25200,
+        "2:vt0-identity-copy-to-vnu5": 26335,
+        "2:vt0-identity-copy-to-vnu6": 29646,
+        "2:vt0-identity-copy-to-vrock1": 32131,
+        "2:vt0-identity-copy-to-vt3": 32131,
+        "2:vt0-identity-copy-to-vt4": 30135,
+        "3:calculated": 2850,
+        "3:vt0-identity-copy-to-vCO1": 2850,
+        "3:vt0-identity-copy-to-vnu10": 2850,
+        "3:vt0-identity-copy-to-vnu4": 2850,
+        "3:vt0-identity-copy-to-vnu5": 2850,
+        "3:vt0-identity-copy-to-vnu6": 2850,
+        "3:vt0-identity-copy-to-vrock1": 2850,
+        "3:vt0-identity-copy-to-vt1": 2850,
+        "3:vt0-identity-copy-to-vt2": 2850,
+        "3:vt0-identity-copy-to-vt3": 2850,
+        "3:vt0-identity-copy-to-vt4": 2850,
+        "6:calculated": 102018,
+        "6:vt0-identity-copy-to-vCO1": 32131,
+        "6:vt0-identity-copy-to-vnu10": 25651,
+        "6:vt0-identity-copy-to-vnu4": 25200,
+        "6:vt0-identity-copy-to-vnu5": 26335,
+        "6:vt0-identity-copy-to-vnu6": 29646,
+        "6:vt0-identity-copy-to-vrock1": 32131,
+        "6:vt0-identity-copy-to-vt3": 32131,
+        "6:vt0-identity-copy-to-vt4": 30135
+      },
+      "file": "e-13ch3oh-l33t-E2000-J46.dat",
+      "levels": 7794,
+      "levels_by_manifold": {
+        "vCO1": 676,
+        "vnu10": 366,
+        "vnu4": 360,
+        "vnu5": 372,
+        "vnu6": 483,
+        "vrock1": 637,
+        "vt0": 1331,
+        "vt1": 1213,
+        "vt2": 1058,
+        "vt3": 813,
+        "vt4": 485
+      },
+      "radiative": 167491,
+      "sha256": "e26c9fe2242b0b560c168720252ccdbb3476b8de26d27d75bbc22113f4f275e9",
+      "sidecars": {
+        "e-13ch3oh.collision-provenance.csv.gz": {
+          "bytes": 15231787,
+          "sha256": "c9c22c37f715b3a6ee220989ef0da560e5a76a001c66f30e5a24a71191a00e24",
+          "uncompressed_sha256": "4a08497acef4f4f4bd4d9df00c035503cac164f970d996cde3d965d1e04a4a30",
+          "uncompressed_bytes": 504307099
+        },
+        "e-13ch3oh.levels.csv.gz": {
+          "bytes": 162441,
+          "sha256": "8058e613c75d78178af706f3987b272142f89bbfecfe8e7d7462fcce84e2cd17",
+          "uncompressed_sha256": "2d97195e65f20efc9aa86ffec11eecad9e622cbace482b2e0a4a59bf9be8487e",
+          "uncompressed_bytes": 1154645
+        },
+        "e-13ch3oh.radiative-ledger.csv.gz": {
+          "bytes": 6443660,
+          "sha256": "5d032d513f84531ac9b6ec8402f44fea6b7d9e5daa71b1c2e8be9dfc619c7cb4",
+          "uncompressed_sha256": "cebd215e105bebd531314915aefa797b1d165ca18c2130ef10225cb206955e9b",
+          "uncompressed_bytes": 25124571
+        }
+      }
+    }
+  ],
+  "reference_date": "2026-11-01"
+}

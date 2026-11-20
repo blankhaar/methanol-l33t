@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this builder version, the exact molecular product used and the source papers in docs/references.bib."
+title: "Methanol L33T: reproducible torsion-rotation and collision data in LAMDA format"
+type: software
+version: "1.0"
+date-released: 2026-11-20
+repository-code: "https://github.com/blankhaar/methanol-l33t"
+url: "https://github.com/blankhaar/methanol-l33t/releases/tag/v1.0"
+authors:
+  - family-names: Lankhaar
+    given-names: Boy
+abstract: "Reconstruction code for the L33T v1.0 methanol molecular data release. It reproduces the frozen l33t-v3 products from the checksum-locked spectroscopy and collision inputs."
+references:
+  - type: article
+    title: "Selection Rules and Intensity Calculations for a Cs Asymmetric Top Molecule Containing a Methyl Group Internal Rotor"
+    authors:
+      - family-names: Hougen
+        given-names: J. T.
+      - family-names: Kleiner
+        given-names: I.
+      - family-names: Godefroid
+        given-names: M.
+    journal: Journal of Molecular Spectroscopy
+    volume: "163"
+    issue: "2"
+    start: "559"
+    end: "586"
+    year: 1994
+    doi: 10.1006/jmsp.1994.1047

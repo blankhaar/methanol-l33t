@@ -1,0 +1,441 @@
+{
+  "resource_parent_revision": "e69f5c7dee7ce4b663afba2b74b0d0cac7ab37c1",
+  "state": "Frozen v3 numerical lineage and v1.0 source distribution",
+  "files": [
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/__init__.py",
+      "source_sha256": "0d192d933f569bcf72302f7353787c8617d220dbc9d76ce6caf42a07dd4d6702",
+      "package_path": "src/methanol_lamda/__init__.py",
+      "packaged_sha256": "3c304726e832c4679ec681857e25e2c559b50d7ab1aa5718721ca5333ae11ef2",
+      "modified": true
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/__main__.py",
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "package_path": "src/methanol_lamda/__main__.py",
+      "packaged_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/basecol.py",
+      "source_sha256": "8b1daa9a3ce6a4e63a10c4de0c99d29212b243b3b439568247baaab1e1d75f25",
+      "package_path": "src/methanol_lamda/basecol.py",
+      "packaged_sha256": "8b1daa9a3ce6a4e63a10c4de0c99d29212b243b3b439568247baaab1e1d75f25",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/build.py",
+      "source_sha256": "3adffd76c11e93160092fee10a21599e68b19cfb9c063d48ea04545c0f6d675c",
+      "package_path": "src/methanol_lamda/build.py",
+      "packaged_sha256": "3adffd76c11e93160092fee10a21599e68b19cfb9c063d48ea04545c0f6d675c",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/catalog.py",
+      "source_sha256": "3904931d8b85c7ff426cb675e91c3d0faf5c4c0e9957d2343daedff9c08853d6",
+      "package_path": "src/methanol_lamda/catalog.py",
+      "packaged_sha256": "3904931d8b85c7ff426cb675e91c3d0faf5c4c0e9957d2343daedff9c08853d6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/ch3_rock.py",
+      "source_sha256": "35ca97a5b34c6ed1446cafe05843cab09d6c4ceb8018c74ec62e61d66f4a4872",
+      "package_path": "src/methanol_lamda/ch3_rock.py",
+      "packaged_sha256": "941b36e30b89401a6c75173527150d9db039584f1f10a0eb38e848276c3bd844",
+      "modified": true
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/cli.py",
+      "source_sha256": "0088a1e00d280ceda6af463331e4d20b2e3841eb0739538c013fa4ec9691c4d0",
+      "package_path": "src/methanol_lamda/cli.py",
+      "packaged_sha256": "0088a1e00d280ceda6af463331e4d20b2e3841eb0739538c013fa4ec9691c4d0",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/co_stretch.py",
+      "source_sha256": "ec43c97de50cf382bb2f99ed929eaedea6e0c57cbf12cd5a4fd9ee529eadaa16",
+      "package_path": "src/methanol_lamda/co_stretch.py",
+      "packaged_sha256": "a0231a6dac4c4b7d3cea2a5e9b8361e8488118d003961ce32fe3cb9278eb3310",
+      "modified": true
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/collision_integrity.py",
+      "source_sha256": "db47522441fe2ffe4fdd7697a008c2fbf2a47031062165895651937adb273b5a",
+      "package_path": "src/methanol_lamda/collision_integrity.py",
+      "packaged_sha256": "db47522441fe2ffe4fdd7697a008c2fbf2a47031062165895651937adb273b5a",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/extended.py",
+      "source_sha256": "5c4dfc05ae4d035d703aa03830fe7c1b755c68d59b0386475d7d4c1acd8c3c09",
+      "package_path": "src/methanol_lamda/extended.py",
+      "packaged_sha256": "5c4dfc05ae4d035d703aa03830fe7c1b755c68d59b0386475d7d4c1acd8c3c09",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/fetch.py",
+      "source_sha256": "2616fd9ab84b39dc7abb7b4810fef3bcccaa227fe3da204cdf3e2928bce825a6",
+      "package_path": "src/methanol_lamda/fetch.py",
+      "packaged_sha256": "2616fd9ab84b39dc7abb7b4810fef3bcccaa227fe3da204cdf3e2928bce825a6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/hamiltonian.py",
+      "source_sha256": "475ec7308154037c6ee15ecc1927eda54b2f5d39ad8e1a78789fa64a57074d7a",
+      "package_path": "src/methanol_lamda/hamiltonian.py",
+      "packaged_sha256": "475ec7308154037c6ee15ecc1927eda54b2f5d39ad8e1a78789fa64a57074d7a",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/he_build.py",
+      "source_sha256": "33580d531bceff45cfd740e6b82e47ab5ddeeb1a96ae39dfe1dee066176ba959",
+      "package_path": "src/methanol_lamda/he_build.py",
+      "packaged_sha256": "33580d531bceff45cfd740e6b82e47ab5ddeeb1a96ae39dfe1dee066176ba959",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/independent.py",
+      "source_sha256": "f2708e4cb30921244d0ffb9df9f7123062b17876f646cca9972c7dfda041e14f",
+      "package_path": "src/methanol_lamda/independent.py",
+      "packaged_sha256": "f2708e4cb30921244d0ffb9df9f7123062b17876f646cca9972c7dfda041e14f",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/integrity.py",
+      "source_sha256": "3a54771db2499ab72168de04ad011ded3101907e27ca3d921e0f0fbc1e5ebb9c",
+      "package_path": "src/methanol_lamda/integrity.py",
+      "packaged_sha256": "3a54771db2499ab72168de04ad011ded3101907e27ca3d921e0f0fbc1e5ebb9c",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/__init__.py",
+      "source_sha256": "b1ccae34ed2e62f526ef43df1eb9a878936a25f22a302cffd1958baf7ea30adc",
+      "package_path": "src/methanol_lamda/isotopologues/__init__.py",
+      "packaged_sha256": "b1ccae34ed2e62f526ef43df1eb9a878936a25f22a302cffd1958baf7ea30adc",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/__init__.py",
+      "source_sha256": "1f0e3d292a632010f907dcf7a507bc52e91f15a84e945a27af29e10a5b52a73c",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/__init__.py",
+      "packaged_sha256": "1f0e3d292a632010f907dcf7a507bc52e91f15a84e945a27af29e10a5b52a73c",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/__main__.py",
+      "source_sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/__main__.py",
+      "packaged_sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/build.py",
+      "source_sha256": "77489bb961f59e699072db7fd8fc1da725333d9ad4c256c38f30e8616560e0a6",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/build.py",
+      "packaged_sha256": "77489bb961f59e699072db7fd8fc1da725333d9ad4c256c38f30e8616560e0a6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/cdms.py",
+      "source_sha256": "75cfe3cb2ac1067271dd24c870bd47b66a322db1b91748a9e47e421a89ec26a6",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/cdms.py",
+      "packaged_sha256": "75cfe3cb2ac1067271dd24c870bd47b66a322db1b91748a9e47e421a89ec26a6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/cli.py",
+      "source_sha256": "5cc67d3ed8634aee745e2ab3491a62c97e6de69fe6585ea48db3559da4e66d8a",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/cli.py",
+      "packaged_sha256": "5cc67d3ed8634aee745e2ab3491a62c97e6de69fe6585ea48db3559da4e66d8a",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/collisions.py",
+      "source_sha256": "451457efd7adf8f0b09f5ca635cd9bfdb78a3d9c8267ae4310fa8ed14e50aec5",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/collisions.py",
+      "packaged_sha256": "451457efd7adf8f0b09f5ca635cd9bfdb78a3d9c8267ae4310fa8ed14e50aec5",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/extended.py",
+      "source_sha256": "c6cc913f20c5187f35b13409aa8a0d294f68dce3d5349f4e8f2f1bb7008bf816",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/extended.py",
+      "packaged_sha256": "c6cc913f20c5187f35b13409aa8a0d294f68dce3d5349f4e8f2f1bb7008bf816",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/he150.py",
+      "source_sha256": "91668cd94c22297a070cca7b3f5d41ce7476357abd4e6bfd72beb1c3832587c6",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/he150.py",
+      "packaged_sha256": "91668cd94c22297a070cca7b3f5d41ce7476357abd4e6bfd72beb1c3832587c6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/isotopologues/ch3oh13/profile.py",
+      "source_sha256": "ea3fad09c9cbd566d74952e5745f66095941cc91df7a0bb6817d11a982e4a49c",
+      "package_path": "src/methanol_lamda/isotopologues/ch3oh13/profile.py",
+      "packaged_sha256": "ea3fad09c9cbd566d74952e5745f66095941cc91df7a0bb6817d11a982e4a49c",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/lamda.py",
+      "source_sha256": "4decaa8641ebb5c4095133bf02b49db02c9a0324d1bbd8dd0db0a56fea3a6452",
+      "package_path": "src/methanol_lamda/lamda.py",
+      "packaged_sha256": "4decaa8641ebb5c4095133bf02b49db02c9a0324d1bbd8dd0db0a56fea3a6452",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/models.py",
+      "source_sha256": "17af74471891956949478044a20c47e159a81314cfd478ad0fcbc0dfb90a591c",
+      "package_path": "src/methanol_lamda/models.py",
+      "packaged_sha256": "17af74471891956949478044a20c47e159a81314cfd478ad0fcbc0dfb90a591c",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/normalize.py",
+      "source_sha256": "5a51308a96ea5c84673efbda8043914edcb52bef65a40a1a591f8c832e56c923",
+      "package_path": "src/methanol_lamda/normalize.py",
+      "packaged_sha256": "5a51308a96ea5c84673efbda8043914edcb52bef65a40a1a591f8c832e56c923",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/observed.py",
+      "source_sha256": "364aab597632a30bc9d6b61e6ddde5ad07ea546ceab11474cb0cc02210564872",
+      "package_path": "src/methanol_lamda/observed.py",
+      "packaged_sha256": "364aab597632a30bc9d6b61e6ddde5ad07ea546ceab11474cb0cc02210564872",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/parity_repair.py",
+      "source_sha256": "c67085567be0d6af4cc396bfe8772fa9c1aec54aa189d2a17cf302fee0a88fe3",
+      "package_path": "src/methanol_lamda/parity_repair.py",
+      "packaged_sha256": "52f70e49cfafaaac2f105464404ef48d9322eaf3be1596b85565afbab8ee0859",
+      "modified": true,
+      "rc1_packaged_sha256": "c67085567be0d6af4cc396bfe8772fa9c1aec54aa189d2a17cf302fee0a88fe3"
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/paths.py",
+      "source_sha256": "d86b662f6009d4d0d40fa330170331cd0b39b914c1513e0e2c57b5acafccb9a6",
+      "package_path": "src/methanol_lamda/paths.py",
+      "packaged_sha256": "d86b662f6009d4d0d40fa330170331cd0b39b914c1513e0e2c57b5acafccb9a6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/physics.py",
+      "source_sha256": "b9ca7071034ca2540597152ff4ec590eda90db15f2bdaf086fae65171311dec3",
+      "package_path": "src/methanol_lamda/physics.py",
+      "packaged_sha256": "b9ca7071034ca2540597152ff4ec590eda90db15f2bdaf086fae65171311dec3",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/postbuild_audit.py",
+      "source_sha256": "3e51d34202299b5a7b9a98d1dafb155429e312d4d470370e0990042611b793c4",
+      "package_path": "src/methanol_lamda/postbuild_audit.py",
+      "packaged_sha256": "3e51d34202299b5a7b9a98d1dafb155429e312d4d470370e0990042611b793c4",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/quantum.py",
+      "source_sha256": "2a7818619690bcc5dfc76949bb423f96b38816db0782aa88cadbf7084013abc5",
+      "package_path": "src/methanol_lamda/quantum.py",
+      "packaged_sha256": "2a7818619690bcc5dfc76949bb423f96b38816db0782aa88cadbf7084013abc5",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/radiative_integrity.py",
+      "source_sha256": "5bcafe9d12782023d61797f7974c9349455a4d5eeeb51ae28cf9f37b931c99b8",
+      "package_path": "src/methanol_lamda/radiative_integrity.py",
+      "packaged_sha256": "5bcafe9d12782023d61797f7974c9349455a4d5eeeb51ae28cf9f37b931c99b8",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/report.py",
+      "source_sha256": "a2bffa3ab09a25a68e3fe974c1a7093d28a86661a2ae0ba1832276892fde8a76",
+      "package_path": "src/methanol_lamda/report.py",
+      "packaged_sha256": "a2bffa3ab09a25a68e3fe974c1a7093d28a86661a2ae0ba1832276892fde8a76",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/strengths.py",
+      "source_sha256": "b10d329c5d1fea87b38d4633b7620e2fcdb796f31b6ffe893e8d3649a45d0873",
+      "package_path": "src/methanol_lamda/strengths.py",
+      "packaged_sha256": "b10d329c5d1fea87b38d4633b7620e2fcdb796f31b6ffe893e8d3649a45d0873",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/validate.py",
+      "source_sha256": "ac7c5127b43d2b0816832f3ac54aa02159df0219d70a8d410dbbd93fd13d374d",
+      "package_path": "src/methanol_lamda/validate.py",
+      "packaged_sha256": "ac7c5127b43d2b0816832f3ac54aa02159df0219d70a8d410dbbd93fd13d374d",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/vibrational_revision.py",
+      "source_sha256": "1bb383aed0afbeb99a95dd37983ce15ff873481adbbebde84a32023320a3e3af",
+      "package_path": "src/methanol_lamda/vibrational_revision.py",
+      "packaged_sha256": "50f87face4d10770b74bd2b80751bfd8c9e9989282d2bdc03b8860a821468b0f",
+      "modified": true
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/src/methanol_lamda/xu.py",
+      "source_sha256": "821d6ca1a17c771063ef65833421607d2076dc6836ebb0a7a52fcdb941c16097",
+      "package_path": "src/methanol_lamda/xu.py",
+      "packaged_sha256": "821d6ca1a17c771063ef65833421607d2076dc6836ebb0a7a52fcdb941c16097",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/fortran/belgi_frozen_levels.f",
+      "source_sha256": "961788b5d36ed437bbd105b7d38efc201eccea5bbff010ef03de78650c004d65",
+      "package_path": "fortran/belgi_frozen_levels.f",
+      "packaged_sha256": "961788b5d36ed437bbd105b7d38efc201eccea5bbff010ef03de78650c004d65",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/fortran/belgi_frozen_strengths.f",
+      "source_sha256": "80ff84070f33f5c247b2cc696357df49fcb47ae11e41e385d09f2dd766f3f119",
+      "package_path": "fortran/belgi_frozen_strengths.f",
+      "packaged_sha256": "80ff84070f33f5c247b2cc696357df49fcb47ae11e41e385d09f2dd766f3f119",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/fortran/cached_dipole_repair.f90",
+      "source_sha256": "4398edfe38dbaa63e6748f73d6db4138a8a3514a165274096d3eecf0f66f4e52",
+      "package_path": "fortran/cached_dipole_repair.f90",
+      "packaged_sha256": "4398edfe38dbaa63e6748f73d6db4138a8a3514a165274096d3eecf0f66f4e52",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/fortran/cached_inten.f",
+      "source_sha256": "d176249c6509ce9966e6a3de11f6a964c11e654799e952f3ed33a6ba4c1dbced",
+      "package_path": "fortran/cached_inten.f",
+      "packaged_sha256": "d176249c6509ce9966e6a3de11f6a964c11e654799e952f3ed33a6ba4c1dbced",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "worktree/fortran/parity_state_repair.f90",
+      "source_sha256": "8e82c0efdafd8aa75ce2bb045a04228017f8dfa39c0db99a39a5fb6bb18745b6",
+      "package_path": "fortran/parity_state_repair.f90",
+      "packaged_sha256": "8e82c0efdafd8aa75ce2bb045a04228017f8dfa39c0db99a39a5fb6bb18745b6",
+      "modified": false
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "crosswalk-validation/highj_scheme_v2.py",
+      "source_sha256": "fc93a58d69324295e0bf4a2e2b3a7c0de87eb5dce54b9cb61fac794eaa7ea95b",
+      "package_path": "scripts/highj_scheme_v2.py",
+      "packaged_sha256": "e6651d1126ce7ef016fb2c423982c67fed060ab547857a111946f1e6e4cae32d",
+      "modified": true
+    },
+    {
+      "source_family": "molecular-resource",
+      "source_path": "reports/collision-v4-2026-10-30/scripts/hybrid_e_lowj.py",
+      "source_sha256": "19152c89f02ff70f638291af3f65e20ca119243001842d3f0f92041f160865ae",
+      "package_path": "scripts/hybrid_e_lowj.py",
+      "packaged_sha256": "a51bd88e632829da8cc716f533b20d4d3e06f270692d5f76c41632f277379155",
+      "modified": true,
+      "rc1_packaged_sha256": "839419cc34a7c93df7923099030f52b96a92a55c5bafcae125f5f954b4034b5b"
+    },
+    {
+      "source_family": "molecular-resource",
+      "source_path": "reports/l33t-v3-2026-11-01/scripts/build_l33t_v3.py",
+      "source_sha256": "f3d4d91b41559195fba644451bf00a6e9db370e1fae7b2551236c2cfc639111b",
+      "package_path": "scripts/build_l33t.py",
+      "packaged_sha256": "b5748c8e57dc0b97f077c86c25b0924c12b72c72de86287075f3aa9e2890eee1",
+      "modified": true,
+      "rc1_packaged_sha256": "56b96bea5bc539ea314fec89c1e519d272962e7c9ff244d1eecfbb84c04f24de"
+    },
+    {
+      "source_family": "molecular-resource",
+      "source_path": "reports/l33t-2026-10-30/scripts/run_spectroscopy_l33t.py",
+      "source_sha256": "7790e82f46610083868cfede2f5970e2b95f5a7dba3207d387aa14ee3fc7a39f",
+      "package_path": "scripts/spectroscopy.py",
+      "packaged_sha256": "0a4ff59cc3c8810cdfc0591d4725577698576c6ea1335ba9a650248f76591e16",
+      "modified": true,
+      "rc1_packaged_sha256": "32a330d47c41885b30f7020e5c55eaf4680c21c0dbc1188f2a639fc867a04639"
+    },
+    {
+      "source_family": "parity-full-vector-source",
+      "source_path": "crosswalk-validation/candidate_export.py",
+      "source_sha256": "44956d2889355db93906ea8bd2d6ae2c6fa04ff9b187c87307472623ac25b770",
+      "package_path": "scripts/candidate_export.py",
+      "packaged_sha256": "238f3e5c08cd52323b25db80c186a0c60ad6dcb2c6a5b0edfdda0dcaee3f5307",
+      "modified": true
+    }
+  ],
+  "portability_changes": [
+    "Replace machine paths with explicit input root and package-relative source paths.",
+    "Keep only four needed candidate_export helpers; their bodies are unchanged.",
+    "Read the accepted observation map and negative-tag CDMS selection directly; remove an unused legacy radiative-master read.",
+    "Derive raw SHA256SUMS from the verified input lock.",
+    "Use PERMANENT/VCO_A/VCO_C as the stage defaults; obsolete VCO_B is not needed for v3."
+  ],
+  "new_interfaces": [
+    "l33t.py",
+    "reapply_source_frequency_policy.py",
+    "validate_products.py",
+    "export_source.py",
+    "tests/test_release.py",
+    "review_support.py",
+    "check_native_cache.py",
+    "tests/test_review.py"
+  ],
+  "scientific_parameters_changed": false,
+  "review_revision": {
+    "version": "0.1.0rc2",
+    "base_commit": "03560e19ac4680632c1f0006e6c5b4633df11838",
+    "changed_inherited_files": [
+      "src/methanol_lamda/parity_repair.py",
+      "scripts/hybrid_e_lowj.py",
+      "scripts/build_l33t.py",
+      "scripts/spectroscopy.py"
+    ],
+    "scope": "testable rule extraction, explicit zero-ratio handling, patch guards, dead-path removal and portable run metadata; frozen v3 inputs/physics parameters retained"
+  },
+  "rc4_note": "Explicit invariant exceptions and -OO-safe help preserve valid-input numerical operations; original source hashes retained.",
+  "release_note": "Public version 1.0 updates distribution metadata, documentation, exporter and receipt labels. The historical source hashes below identify their respective snapshots. SOURCE-MANIFEST.json identifies every shipped source file."
+}

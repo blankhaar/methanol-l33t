@@ -1,0 +1,9 @@
+/work/
+/inputs/
+/dist/
+/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/docs/build/
+.DS_Store

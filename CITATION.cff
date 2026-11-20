@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this dataset version, identify the molecular file used, and credit the spectroscopy and collision sources in the companion."
+title: "L33T methanol molecular data for excitation calculations"
+type: dataset
+version: "1.0"
+date-released: 2026-11-20
+authors:
+  - family-names: Lankhaar
+    given-names: Boy
+repository-code: "https://github.com/blankhaar/methanol-l33t"
+url: "https://github.com/blankhaar/methanol-l33t/releases/tag/v1.0"
+abstract: "A- and E-symmetry LAMDA-format molecular data for CH3OH and 13CH3OH, with level, radiative and collision provenance. Version 1.0 distributes the frozen molecular model l33t-v3."

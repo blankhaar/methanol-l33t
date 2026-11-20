@@ -1,0 +1,525 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,longtable,array}
+\usepackage{graphicx,xcolor,enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible,frame=single,framerule=0.2pt}
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\newcommand{\vt}{v_{\rm t}}
+\newcommand{\smu}{S\mu^2}
+\newcommand{\cm}{\,\mathrm{cm}^{-1}}
+\title{Methanol L33T\\\large Molecular data, construction and reproducibility}
+\date{20 November 2026\\\small Release v1.0 \quad Molecular model \texttt{l33t-v3}}
+\begin{document}
+\maketitle
+\begin{abstract}
+L33T provides separate A- and E-symmetry molecular files for ordinary and
+carbon-13 methanol, with a large torsional and vibrational excitation basis.
+The source package reconstructs the torsion--rotation spectrum, electric-dipole
+strengths, Einstein coefficients and a source-based collision network, including
+the specified extrapolations. This document defines the numerical model and its
+reproducibility contract. L33T v3 is the adopted molecular dataset for numerical
+experiments, selected by the maintainer on 6 November 2026. Its collision and
+vibrational prescriptions include the approximations specified here; their
+physical accuracy must be assessed for each application. Public release v1.0 supplies these four molecular files, their row-level
+provenance and the reconstruction code.
+\end{abstract}
+\tableofcontents
+\clearpage
+
+\section{Products and intended use}
+The package targets excitation calculations that require high-lying methanol
+levels and infrared pumping channels. A and E species are separate systems;
+the files contain no A--E conversion. The four products are listed in
+Table~\ref{tab:products}. Their identities are fixed by SHA-256 checksums in
+\path{provenance/products.json}, including the three accompanying provenance
+tables for each file. Filenames alone are insufficient version identifiers.
+
+\begin{table}[ht]
+\centering
+\caption{Frozen L33T v3 products. Filenames end in
+\texttt{-l33t-E2000-J46.dat}. All collision rows are downward coefficients.}
+\label{tab:products}
+\begin{tabular}{lrr}
+\toprule File prefix & Levels & Radiative rows\\\midrule
+\texttt{a-12ch3oh} & 7,600 & 146,635\\
+\texttt{e-12ch3oh} & 7,669 & 163,932\\
+\texttt{a-13ch3oh} & 7,714 & 149,820\\
+\texttt{e-13ch3oh} & 7,794 & 167,491\\\midrule
+Total & 30,777 & 627,878\\\bottomrule
+\end{tabular}
+\end{table}
+
+Together the products contain 7,811,683 collision rows. Each retains model
+states with $E<2000\cm$ above the ground state of its own symmetry species.
+The native enumeration uses $J\le46$ and $|K|\le22$; the energy cut removes
+many states in this box. The retained manifolds are $\vt=0,\ldots,4$ and six
+uncoupled vibrational fundamentals: CO stretch ($\nu_8$), in-plane CH$_3$
+rock ($\nu_7$), $\nu_6$, $\nu_5$, $\nu_4$ and $\nu_{10}$.
+This is completeness within the declared model and enumeration, not all
+physical rovibrational states below the energy threshold. For example, the
+weak $\nu_{11}$ band is omitted, and coupled combination states are not
+constructed.
+
+The intended exploratory ranges were $T_{\rm kin}\le400$ K and
+$T_{\rm dust}\le500$ K. They are model-design ranges, not a demonstrated
+accuracy domain. The tabulated collision grid is
+\begin{equation}
+T/\mathrm K=(10,20,30,50,75,100,150,200,300,400).
+\end{equation}
+Published rate calculations do not cover this entire level--temperature space.
+The approximation labels in the collision ledger must accompany any use of
+the high-temperature or high-$J$ model.
+
+\section{Hamiltonian, symmetry and state identity}
+\subsection{Frozen torsion--rotation model}
+The main-isotope calculation uses the fitted methanol Hamiltonian of
+Xu et al.~\cite{XuEtAl2008}; the isotope calculation uses the separate
+$^{13}$CH$_3$OH parameter set of Xu et al.~\cite{XuEtAl2014C13}.
+The implementation is a Python interface to the checksum-identified native
+BELGI Fortran matrix routines and supplied prediction drivers. Python stages
+coefficients and compiles the native calculation. BELGI supplies Hamiltonian
+matrices; local overlays perform the A-species parity-block eigensolve, state
+assignment and all cached line-strength contractions. The GLOBALFIT program
+is not compiled or executed. Native unpruned INTEN is used only in the separate
+contraction comparison, which shares the repaired eigensystem. Users should acknowledge BELGI-C$_s$ and cite
+Hougen, Kleiner and Godefroid~\cite{Hougen_1994}, in addition to the
+isotope-specific parameter sources. No refit is performed.
+
+A schematic leading-order form, using the positive coupling sign in the
+archived native torsional basis, is
+\begin{align}
+H={}&F(p_\gamma+\rho J_a)^2+
+\sum_{n\ge1}\frac{V_{3n}}{2}[1-\cos(3n\gamma)]\nonumber\\
+&+A_{\rm RAM}J_a^2+B_{\rm RAM}J_b^2+C_{\rm RAM}J_c^2
++D_{ab}\{J_a,J_b\}+H_{\rm higher}.
+\label{eq:ham}
+\end{align}
+Here $\gamma$ is the internal-rotation angle, angular-momentum operators are
+dimensionless, and the coefficients carry the corresponding spectroscopic
+units. Equation~\eqref{eq:ham} describes the operator structure; it is not a
+replacement for the full fitted operator inventory. The native torsional
+factor is $3m+\sigma+\rho K$. Changing the sign convention for $\gamma$ or
+the body axes requires a consistent parameter and dipole transformation.
+
+The main-isotope loader retains all 119 nonzero fitted coefficients and
+explicitly fills the other 86 slots in the 205-entry constant vector with
+zero. The isotope has its own frozen vector. Native matrices, fitted
+coefficients and patch anchors are checksum-bound; no unspecified compiler
+initialization supplies missing coefficients. The fitted $\vt\le2$ domain
+does not make $\vt=3,4$ or the high-$J$ extension independently validated
+spectroscopy.
+
+\subsection{Parity and complete eigenvectors}
+Nearly degenerate A-state pairs require a parity-resolved eigensolve.
+The overlay first diagonalizes the physical parity operator, then solves
+the Hamiltonian within its separate parity subspaces. It checks the parity
+operator, Hamiltonian commutator, eigen-residuals and orthogonality. A global
+bijective overlap assignment maintains the exported A identities across $J$.
+The dipole contraction retains all nine internal blocks of the native
+torsion--rotation vectors. The E calculation retains the native ENCAL2
+assignment and the same full-vector contraction.
+
+Labels have the form \texttt{A:vt0:J5:K2:+} or
+\texttt{E:vt0:J5:K-2}. A uses $K\ge0$ and a separate sign; E uses signed
+$K$. The A label sign is not itself physical parity: for torsional states,
+\begin{equation}
+P_A=s_A(-1)^{J+\vt}.
+\end{equation}
+The $\nu_{10}$ level retains its carrier ground-state label but has the
+opposite physical parity. Assignment is a reproducible convention in a
+mixed-state system; it does not independently prove every approximate
+spectroscopic $\vt,K$ label at a resonance.
+
+Energies are referred to the ground of each species and weights are
+$g=2J+1$. No common nuclear-spin multiplier is inserted in these weights.
+For deterministic serialization only, exact level-energy ties are separated
+with \texttt{nextafter}; the level ledger retains both physical and serialized
+energies. Artificial tie splittings do not generate physical radiative lines.
+
+\section{Electric-dipole strengths and Einstein coefficients}
+\subsection{Native operators}
+The permanent torsion--rotation operator uses the adopted constant components
+$\mu_a=0.899$ D and $\mu_b=-1.44$ D, with the three
+$\cos3\gamma$ dipole coefficients fixed to zero. It is a specified
+constant-dipole model, not a recovered general torsion-dependent dipole surface.
+Rotational tensors are contracted with the complete mixed eigenvectors;
+nominal $\Delta K$ filters are not imposed on the resulting amplitudes.
+
+The vibrational construction reuses ground-manifold eigenfunctions with
+effective band moments. A pure $a$-axis reference operator of 0.27 D supplies
+CO, rock and the additional $A'$ bands. A direct $c$-axis reference supplies
+$\nu_{10}$. In the adopted $a$-quantized basis,
+\begin{equation}
+\mu_b\ \propto\frac{T_{-1}-T_{+1}}{\sqrt2},\qquad
+\mu_c\ \propto\frac{i(T_{-1}+T_{+1})}{\sqrt2}.
+\end{equation}
+The common phase $i$ cancels from the squared amplitude, but the relative
+sign does not. The $c$ contraction therefore cannot generally be replaced
+by a relabelled $b$ contraction. It includes transitions between the $\vt=0$
+function carrying the vibrational level and lower torsional functions through
+$\vt=4$.
+
+\subsection{Units, frequency hierarchy and cuts}
+For frequency in MHz and $\smu$ in D$^2$, the preserved conversion is
+\begin{equation}
+A_{ul}[\mathrm{s}^{-1}]
+=1.16395\times10^{-20}\,
+\frac{\nu_{ul}[\mathrm{MHz}]^3\,\smu[\mathrm D^2]}{2J_u+1}.
+\label{eq:einstein}
+\end{equation}
+The numerical prefactor is the frozen implementation's rounded convention.
+Strengths and weights must share that convention: catalogue nuclear-spin
+factors cannot be imported without conversion. Frequencies and upper-state
+energies are distinct output quantities.
+
+The default frequency is the physical model gap, with
+$\nu[\mathrm{MHz}]=29979.2458\,\Delta E[\mathrm{cm}^{-1}]$.
+For main-isotope torsional lines, the frozen accepted Xu observation map
+replaces the model frequency by exact endpoint identity. For the isotope,
+negative-tag observed CDMS 033502 entries are selected by exact identity.
+Explicit configured frequency overrides have final precedence. Ambiguous
+identities are not guessed. The Einstein coefficient is recalculated with
+the adopted frequency cubed, preserving the underlying strength.
+
+The permanent native spectrum is generated down to $10^{-6}$ D$^2$.
+The 0.27-D reference operators use that same native strength floor before
+band-moment scaling. At product assembly, ordinary radiative rows require
+$\smu\ge10^{-4}$ D$^2$, whereas $\nu_{10}$ cross-band rows require
+$\smu\ge10^{-7}$ D$^2$. These are strength cuts, not fixed $A$ cuts.
+The additional weak $\nu_{10}$ branches distinguish v3 from v2.
+Zero-gap emission, duplicate endpoints, $|\Delta J|>1$, $J=0\to0$ and
+forbidden A-parity transitions are rejected or excluded as specified by the
+builder. Radiative graphs must remain connected.
+
+\section{Vibrational energies and intensities}
+CO and rock empirical terms derive from the archived Xu et al. V7/V8 line
+compilation~\cite{Xu_2004}. Lower terms are bound to the ground identities
+at $J\le22$, with a $2.5\times10^{-4}\cm$ tolerance. This avoids silently
+extending an empirical identity match into the less accurate high-$J$
+Hamiltonian prediction. Missing CO levels use the constant offset of the
+highest measured $J$ in the same species/$K$/parity ladder, where available,
+and otherwise a species-median offset. The rock policy interpolates offsets
+in $J(J+1)$, keeps a constant offset above the last measured $J$, and uses
+the declared $K$-origin proxies where needed.
+
+The CO operator is normalized against thirteen specified published
+absorption features at 297 K. The inverse median predicted/measured ratio
+sets one common strength scale. One unresolved high-$K$ feature is excluded.
+This is an in-sample band normalization, not an independent intensity test.
+The isotope CO energies use the Mukhopadhyay et al. subband model
+\cite{Mukhopadhyay_1995}; rock origins use the retained Predoi-Cross
+transcription\cite{PredoiCross1997}. Main-isotope CO calibration and selected
+rock strengths are transferred to the isotope by the specified identities.
+
+For the four new bands, the carrier ground rotational energy is shifted by
+the species origin in Table~\ref{tab:bands}. The listed E origins use the
+common A zero of the source table; the builder subtracts its isotope-specific
+A--E ground splitting before adding an E-species ground term. Origins and
+moments follow the adopted values from Sunaga et al.~\cite{Sunaga_2026}.
+The $^{13}$C files use the same four origins without an isotope shift: this
+is a labelled proxy, not an isotope measurement.
+
+\begin{table}[ht]
+\centering\small
+\caption{Additional band inputs. Origins are in cm$^{-1}$ and squared moments
+in $e^2a_0^2$; multiply the latter by $2.541746473^2$ for D$^2$. Assigning
+all $A'$ strength to $a$ is a model choice, not a unique consequence of symmetry.}
+\label{tab:bands}
+\begin{tabular}{lrrrrc}
+\toprule Band & Origin A & Origin E & $\mu_A^2$ & $\mu_E^2$ & Axis\\\midrule
+$\nu_6$ &1320.6&1297.5&$6.14\,10^{-4}$&$2.42\,10^{-4}$&$a$\\
+$\nu_5$ &1453.3&1462.1&$1.48\,10^{-4}$&$1.41\,10^{-4}$&$a$\\
+$\nu_4$ &1486.1&1483.3&$1.74\,10^{-4}$&$1.31\,10^{-4}$&$a$\\
+$\nu_{10}$ &1481.5&1473.9&$1.29\,10^{-4}$&$9.67\,10^{-5}$&$c$\\\bottomrule
+\end{tabular}
+\end{table}
+
+Intraband radiation copies the ground-state permanent strengths by exact
+rotational identity and recomputes $A$ with the new energy gaps. Corrected
+direct V7 strengths override the theoretical parallel-rock strengths for
+their verified endpoints. The quarantined ambiguous source row remains
+excluded. The model does not solve a coupled vibrational Hamiltonian or
+include general rovibrational intensity borrowing.
+
+\section{Collision data and extrapolation}
+\subsection{Normalization and precedence}
+The sources are the Rabli--Flower para-H$_2$ and He calculations for
+$\vt=0,1,2$\cite{RabliFlower2010H2,RabliFlower2010He}, the torsion-changing
+He calculation\cite{RabliFlower2011}, and the lower-level Dagdigian
+para-/ortho-H$_2$ matrices\cite{Dagdigian2024}. The retained BASECOL releases
+provide 18 matrices. Normalization joins each rate to source-level quantum
+identities, energies and raw hashes. Of 425,430 raw rows, 6,108 have an endpoint
+outside the historical collision identity basis; the remaining 419,322 rows
+reproduce the frozen normalized master. Enlarging this basis is a scientific
+change, not a packaging correction.
+
+The E $\vt=1$ para-H$_2$ table IDC474 has a recorded discontinuity in its
+180--200 K columns. These columns are retained in the raw file but excluded
+from usable normalization. The 170 K endpoint therefore controls its
+high-temperature continuation. Other tables retain their own usable grids.
+
+Direct calculated rows take precedence where available; Dagdigian supplies
+the low-level H$_2$ coverage. Native $\vt=1,2$ rows are retained. Missing
+within-manifold rows in excited torsional and vibrational systems receive
+exact-identity copies of ground-state coefficients. Native He torsion-changing
+rows are retained, but new intermanifold couplings are not manufactured.
+There is no broad high-$J$ ortho-H$_2$ extrapolation.
+
+\subsection{The E-species hybrid}
+The adopted E prescription is an explicit approximation:
+\begin{equation}
+k_{E,c}^{\rm hybrid}(T)=k_{E,p}^{\rm RF}(T)\,R_{A,c}(T),
+\qquad c=p,o.
+\end{equation}
+The multiplier compares Dagdigian and Rabli--Flower A rates after summing
+the parity partners of the corresponding $(J,|K|)$ pair. Its direction-neutral
+summands are
+\begin{equation}
+\widetilde k_{ul}=g_u k_{ul}
+ \exp[-c_2(E_u-E_l)/(2T)],\qquad
+c_2=1.4387768775039338\ \mathrm{K\,cm}.
+\end{equation}
+The denominator uses RF para-H$_2$ for both multipliers. Missing quartet
+ratios fall back to the median at the same $(|\Delta J|,|\Delta|K||)$,
+then the global median. Rates are first oriented and interpolated as in the
+implementation. The hybrid preserves RF E propensities while transferring
+an A-based magnitude correction; it is not a new E scattering result.
+An RF E zero is inherited even when the replaced Dagdigian coefficient is
+positive: the locked inputs contain 370 such pair--temperature nodes per
+collider, or 37 pairs at all ten temperatures. With identity copies these yield
+333 all-zero para-H$_2$ rows and 407 all-zero ortho-H$_2$ rows in each E file.
+Across all sources and extrapolations, E-12 and E-13 contain 55,935 and 57,133
+all-zero para-H$_2$ rows; E-12 includes 49,462 extrapolated rows of this kind.
+These are represented zeros, distinct from absent rows.
+Exact zero quartet ratios are valid and do not trigger a fallback.
+There are no zero quartet ratios in the locked inputs; the corrected
+zero-handling rule therefore leaves the frozen products unchanged.
+
+\subsection{Signed J/K donor rule}
+Missing intramanifold para-H$_2$ pairs with $|\Delta J|\le10$ are eligible
+for extrapolation. The donor edge is $J_d=12$. Existing rates are never
+replaced. The first search preserves the two $K$ labels and A signs, shifting
+both $J$ values down to the edge. If that exact jump is unavailable, clamped
+or edge-anchored donors with a smaller, nonzero, equally signed $\Delta J$
+may be used. Their coefficient is multiplied by
+$|\Delta J_d|/|\Delta J_{\rm target}|$. A zero-$\Delta J$ target requires
+a zero-$\Delta J$ donor and uses scale one.
+
+If this search fails, define
+\begin{equation}
+s=\max(|K_u|,|K_l|)-(12-|J_u-J_l|).
+\end{equation}
+For $s>0$, both endpoints undergo
+$J_i\mapsto J_i-s$ and $K_i\mapsto K_i-s\sigma_K$, where $\sigma_K$
+is the sign of the endpoint with larger $|K|$ (upper endpoint on a tie).
+The same donor search follows. Invalid $|K|>J$, negative A $K$, absent
+donors and inappropriate branches remain unsupported. E $K$ is signed:
+the translation can change the individual sign class while preserving signed
+$\Delta K$. A $K=0$ uses its canonical $+$ label. Every transferred rate
+records its donor, shift, scale and direction handling.
+
+\subsection{Temperature, direction and isotope scaling}
+Positive source rates are interpolated linearly in $\log k$ versus
+$\log T$; intervals with a zero endpoint use linear interpolation in $k,T$.
+Outside each usable source grid,
+\begin{equation}
+k(T)=k(T_e)\sqrt{T/T_e}.
+\end{equation}
+This supplies values on the released 10--400 K grid. It does not prescribe
+a consumer's extrapolation outside the released grid.
+
+When a copied or donor transition is used in the reverse of its source
+energy ordering, source energies and weights first give
+\begin{equation}
+k_{lu}^{\rm source}=k_{ul}^{\rm source}
+\frac{g_u^{\rm source}}{g_l^{\rm source}}
+\exp[-c_2\Delta E_{\rm source}/T].
+\end{equation}
+The resulting coefficient is attached to the downward target transition.
+Its upward target partner must then be computed with the \emph{target}
+energy gap and weights. Mixing the two gaps violates the intended model.
+
+Carbon-13 rates are transferred by identity with
+\begin{equation}
+k_{13,c}=\sqrt{\mu_{12,c}/\mu_{13,c}}\,k_{12,c},\qquad
+\mu_{i,c}=\frac{m_i m_c}{m_i+m_c}.
+\end{equation}
+The isotope mass sums in the scaling module, rather than the rounded display
+mass in the DAT header, define these factors. The frozen headers retain
+32.04186 u for ordinary methanol (average mass convention) and
+33.02957 u for carbon-13 methanol (monoisotopic convention). This
+historical display inconsistency is retained to preserve exact v3 identity;
+it does not enter the reduced-mass rate calculation. This assumes unchanged
+state-to-state cross-section integrals at the same temperature.
+
+\section{File use and reproducible workflow}
+The literal \texttt{[EXPERIMENTAL]} tag in the frozen DAT titles is historical
+and retained solely for byte-identical v3 reproduction. The maintainer's
+6 November 2026 adoption supersedes that label; current delivery manifests
+identify the adopted-use status. Programs displaying the raw title may still
+show the old tag.
+
+The output follows the
+\href{https://home.strw.leidenuniv.nl/~moldata/molformat.html}{LAMDA format}:
+level energies in cm$^{-1}$, $A$ in s$^{-1}$, line frequency in GHz and
+downward collision coefficients in cm$^3$\,s$^{-1}$. Partner IDs are 2
+(para-H$_2$), 3 (ortho-H$_2$) and 6 (He). The format does not fix densities,
+an H$_2$ mixture, a He abundance or a fallback policy. A consumer that scales
+He rows to represent missing H$_2$ rates implements an additional model;
+that choice must not be confused with adding physical He collisions.
+
+\begin{table}[ht]
+\centering\small
+\caption{Measured collision coverage. Each cell gives rows / levels appearing
+in rows. Present zero coefficients count as rows; these are not counts of
+positive couplings or of complete networks.}
+\label{tab:coverage}
+\begin{tabular}{lrrr}
+\toprule Product & para-H$_2$ & ortho-H$_2$ & He\\\midrule
+A-12 & 1,528,128 / 7,600 & 31,350 / 836 & 332,615 / 2,684\\
+E-12 & 1,615,634 / 7,669 & 31,350 / 836 & 335,378 / 2,696\\
+A-13 & 1,556,888 / 7,714 & 31,350 / 836 & 332,615 / 2,684\\
+E-13 & 1,649,647 / 7,794 & 31,350 / 836 & 335,378 / 2,696\\\bottomrule
+\end{tabular}
+\end{table}
+Only para-H$_2$ receives the J/K extrapolation. Ortho-H$_2$ leaves
+6,764--6,958 levels per file without a row; He leaves 4,916--5,098.
+For ortho fraction $f={\rm OPR}/(1+{\rm OPR})$, the file-level mixture is
+\begin{equation}
+C_{ul}=n({\rm H}_2)[(1-f)k_{ul,p}+f k_{ul,o}]+n({\rm He})k_{ul,\mathrm{He}}.
+\end{equation}
+An absent entry contributes no term, but represents unknown coupling rather
+than an established physical zero. Increasing the ortho fraction can remove
+much of the represented high-level H$_2$ excitation. No automatic substitution
+of para for ortho or He for H$_2$ is supplied. Any such fallback is an additional
+consumer model; declare it together with densities and OPR and avoid counting
+physical He twice. Per-manifold coverage is in
+\path{provenance/collider-coverage.json}.
+
+The portable release contains Python source, native prediction drivers,
+parity/dipole overlays, the input lock, numerical reference checksums and
+tests. The four species archives can be used directly. To regenerate them, obtain
+the 97 locked inputs (153,588,511 bytes) separately. These include 58 original
+BELGI Fortran files. The private reproduction bundle contains them beneath
+\path{inputs/}. Its source and input checksums are in \path{SOURCE-MANIFEST.json}.
+
+\begin{lstlisting}
+python scripts/l33t.py check-inputs --inputs inputs
+python scripts/l33t.py rebuild --inputs inputs --output work/rebuild
+python scripts/l33t.py extract --products work/rebuild/products \
+  --isotope both --species both --gzip --output work/delivery
+\end{lstlisting}
+
+The rebuild performs normalization, fresh native calculations for both isotope
+Hamiltonians, all radiation and collision assembly, serialization, exact
+reference checks and a separate streaming structural/format audit. Output
+directories must be new. The compressed provenance tables retain physical
+level energies and their basis, radiative strengths/operators/frequency policy,
+and collision sources/transforms/donors. Extraction copies complete selected
+products with these sidecars; it does not subset levels.
+
+The frozen Xu observation crosswalk and empirical source transcriptions are
+inputs. This package does not regenerate their historical human/source
+adjudication from the original full literature record. Source constants and
+model choices are pinned rather than refitted. Exact product hashes test the
+preserved numerical environment; different compiler/linear-algebra stacks
+may require a separately documented numerical comparison if bitwise identity
+fails. \texttt{verify} checks exact DAT bytes and decompressed provenance CSV
+content; \texttt{--archive-bytes} also checks the original compressed bytes.
+The \texttt{compare} command matches quantum labels, endpoint pairs and
+collider IDs independently of transition row order. Its tolerances are
+$10^{-8}$ cm$^{-1}$ absolute plus $10^{-10}$ relative for level energies;
+$10^{-9}$ absolute plus $10^{-9}$ relative for frequencies in GHz and upper
+energies in K; and $10^{-7}$ relative with zero absolute tolerance for $A$
+and collision coefficients. Thus zero rates remain zero. Masses, weights,
+grids and identity sets match exactly. Sidecar provenance is checked by
+\texttt{verify}, not by the numerical DAT comparator. A numerical pass does
+not silently promote a new platform's bytes to the same frozen release.
+
+\section{Validation, limitations and release state}
+\subsection{Evidence supported by the existing audits}
+The v3 acceptance record covers all four full files and all provenance rows.
+Relative to v2, every previous radiative row is preserved, as are the level
+and complete collision sections; only 28,347 weak $\nu_{10}$ branches were
+added. Independent A/E contractions through upper $J=12$ in both isotopes
+matched 13,614 v3 branches to maximum relative discrepancy
+$4.1\times10^{-13}$. The full consumer comparison at 250 K checked
+6,372,797 assembled collision pairs, with maximum detailed-balance residual
+$3.85\times10^{-15}$. This tests consumer upward-rate arithmetic with target
+energies and weights, not the physical accuracy of downward coefficients.
+
+Against the available native $c$-operator reference, the maximum omitted
+$\nu_{10}$ spontaneous decay into retained lower states is
+$0.0066703\%$. This accounts for the product floor only: native threshold,
+finite torsional basis, incident radiation and the physical band model remain
+separate. It is not an arbitrary-radiation pumping or non-LTE convergence bound.
+
+The RF-only $J=13$--15 holdout quantifies the donor rule. For translated
+pairs, the 90th-percentile factor errors are 3.57/8.82 (A/E) at 100 K and
+4.23/9.35 at 200 K. The factor metric is
+$\exp(|\log(k_{\rm predicted}/k_{\rm reference})|)$.
+This backtest does not validate the E hybrid or extension to $J=46$.
+Extrapolated para-H$_2$ rows carry 57.8--58.6\% of the LTE-weighted downward
+para-H$_2$ flux at 400 K in the audited products. Such errors are model
+uncertainties, not numerical solver tolerances.
+
+\subsection{Numerical reproduction}
+\path{provenance/validation.json} separates current source-package checks from
+the dated rc2 full rebuild and inherited independent audits. It records the
+tested platform, exact product comparison and archive checks. A subsequent
+main-isotope PERMANENT calculation through $J=46$ reproduced the native
+level and line tables byte for byte. Synthetic fixtures cover the absolute Einstein-A
+prefactor, copied-rate reversal, signed-K translation, observed-frequency
+precedence, A parity, isotope scaling, exact-tie reorientation and E-hybrid
+zeros/fallbacks. Portable checks reject changed identities, grids and rate
+values while accepting specified numerical tolerance and compression changes;
+patch guards also operate under optimized Python. These tests are not a replacement
+for full generation or independent molecular validation.
+
+The fresh native-INTEN/cache check covers 143,176 strengths across both
+isotopes in PERMANENT and VCO\_A modes through $J=12$. All endpoint sets
+agree; the maximum relative discrepancy is $3.89\times10^{-12}$, within
+the stated numerical tolerance. This tests equivalent contractions of the
+same repaired eigenvectors, not independent Hamiltonian physics. The direct
+$c$-operator check remains inherited evidence.
+
+The remaining scientific qualifications include high-$J$ and high-$|K|$
+spectroscopy; labels near mixed resonances; collision donor errors; the E
+hybrid; excited-manifold copies; sparse torsion-changing collisions;
+temperature continuation; pure-axis vibrational moments; missing vibrational
+couplings; and isotope transfer. A recent consumer calculation shows
+observable-dependent basis and collision sensitivities. Numerical agreement
+of the molecular files alone cannot establish maser gain, brightness,
+saturation, source geometry or a common emitting parcel.
+
+\clearpage
+\subsection{Availability and citation}
+Download the four species archives and their SHA-256 checksums from the
+\href{https://github.com/blankhaar/methanol-l33t/releases/tag/v1.0}{GitHub release for v1.0}.
+Each ZIP contains one LAMDA file and three compressed CSV tables.
+Cite Boy Lankhaar (2026), \emph{L33T methanol molecular data for excitation
+calculations}, version 1.0. Give the isotope, A/E symmetry and DAT checksum.
+Credit BELGI-C$_s$ and Hougen, Kleiner and Godefroid~\cite{Hougen_1994},
+the relevant Hamiltonian fits and collision calculations, and the databases
+identified in the provenance. No dataset DOI has been assigned.
+
+The project code is licensed under EUPL-1.2. Upstream BELGI material and
+source data retain their respective terms. Regeneration requires the 97 locked
+inputs separately. Native reproduction on a second platform remains untested.
+The \href{https://github.com/blankhaar/methanol-l33t/tree/v1.0/methanol-l33t/docs}{release documentation}
+includes the editable companion and bibliography.
+
+\bigskip
+\begingroup
+\small
+\setlength{\bibsep}{2pt}
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\endgroup
+\end{document}

@@ -1,0 +1,7 @@
+/products/
+/release-assets/
+/inputs/
+*.zip
+.DS_Store
+__pycache__/
+*.py[cod]

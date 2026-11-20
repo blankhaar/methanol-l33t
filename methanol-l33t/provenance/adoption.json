@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "authority": "Explicit maintainer instruction",
+  "status": "adopted-for-numerical-experiments",
+  "product_version": "l33t-v3",
+  "source_package_version": "1.0",
+  "products_manifest_sha256": "bc537af07e5049845fe9cd344d9b97c446f3dab0da0aa8a628f52ade3d796eb0",
+  "scope": "Default molecular dataset for upcoming numerical experiments. Historical run configurations and outputs retain their exact pins.",
+  "approximations": "Finite basis and strength floor; frozen-ground vibrational bands; empirical and copied collision rates; limited ortho-H2/He coverage; isotope scaling. See companion for quantitative scope.",
+  "publication": "Release v1.0 distributes the approved source and derived products. The 97 original inputs are separately held.",
+  "legacy_DAT_title": "The literal [EXPERIMENTAL] tag is a historical label frozen into the v3 bytes. The 6 November 2026 adoption supersedes that label; it is not the current use status.",
+  "public_release_date": "2026-11-20",
+  "release_url": "https://github.com/blankhaar/methanol-l33t/releases/tag/v1.0"
+}

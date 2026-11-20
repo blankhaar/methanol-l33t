@@ -1,0 +1,656 @@
+{
+  "products": [
+    {
+      "file": "a-12ch3oh-l33t-E2000-J46.dat",
+      "levels": 7600,
+      "colliders": {
+        "2": {
+          "rows": 1528128,
+          "extrapolated_rows": 1201138,
+          "levels_touched": 7600,
+          "levels_without_rows": 0,
+          "by_manifold": {
+            "vt0": {
+              "total": 1313,
+              "touched": 1313
+            },
+            "vt1": {
+              "total": 1194,
+              "touched": 1194
+            },
+            "vt2": {
+              "total": 1041,
+              "touched": 1041
+            },
+            "vt3": {
+              "total": 797,
+              "touched": 797
+            },
+            "vCO1": {
+              "total": 650,
+              "touched": 650
+            },
+            "vt4": {
+              "total": 473,
+              "touched": 473
+            },
+            "vrock1": {
+              "total": 622,
+              "touched": 622
+            },
+            "vnu6": {
+              "total": 454,
+              "touched": 454
+            },
+            "vnu5": {
+              "total": 368,
+              "touched": 368
+            },
+            "vnu10": {
+              "total": 345,
+              "touched": 345
+            },
+            "vnu4": {
+              "total": 343,
+              "touched": 343
+            }
+          }
+        },
+        "3": {
+          "rows": 31350,
+          "extrapolated_rows": 0,
+          "levels_touched": 836,
+          "levels_without_rows": 6764,
+          "by_manifold": {
+            "vt0": {
+              "total": 1313,
+              "touched": 76
+            },
+            "vt1": {
+              "total": 1194,
+              "touched": 76
+            },
+            "vt2": {
+              "total": 1041,
+              "touched": 76
+            },
+            "vt3": {
+              "total": 797,
+              "touched": 76
+            },
+            "vCO1": {
+              "total": 650,
+              "touched": 76
+            },
+            "vt4": {
+              "total": 473,
+              "touched": 76
+            },
+            "vrock1": {
+              "total": 622,
+              "touched": 76
+            },
+            "vnu6": {
+              "total": 454,
+              "touched": 76
+            },
+            "vnu5": {
+              "total": 368,
+              "touched": 76
+            },
+            "vnu10": {
+              "total": 345,
+              "touched": 76
+            },
+            "vnu4": {
+              "total": 343,
+              "touched": 76
+            }
+          }
+        },
+        "6": {
+          "rows": 332615,
+          "extrapolated_rows": 0,
+          "levels_touched": 2684,
+          "levels_without_rows": 4916,
+          "by_manifold": {
+            "vt0": {
+              "total": 1313,
+              "touched": 254
+            },
+            "vt1": {
+              "total": 1194,
+              "touched": 254
+            },
+            "vt2": {
+              "total": 1041,
+              "touched": 254
+            },
+            "vt3": {
+              "total": 797,
+              "touched": 254
+            },
+            "vCO1": {
+              "total": 650,
+              "touched": 254
+            },
+            "vt4": {
+              "total": 473,
+              "touched": 244
+            },
+            "vrock1": {
+              "total": 622,
+              "touched": 254
+            },
+            "vnu6": {
+              "total": 454,
+              "touched": 242
+            },
+            "vnu5": {
+              "total": 368,
+              "touched": 230
+            },
+            "vnu10": {
+              "total": 345,
+              "touched": 222
+            },
+            "vnu4": {
+              "total": 343,
+              "touched": 222
+            }
+          }
+        }
+      },
+      "definition": "Endpoints present in rows; a present zero rate is not positive coupling."
+    },
+    {
+      "file": "e-12ch3oh-l33t-E2000-J46.dat",
+      "levels": 7669,
+      "colliders": {
+        "2": {
+          "rows": 1615634,
+          "extrapolated_rows": 1285881,
+          "levels_touched": 7669,
+          "levels_without_rows": 0,
+          "by_manifold": {
+            "vt0": {
+              "total": 1318,
+              "touched": 1318
+            },
+            "vt1": {
+              "total": 1195,
+              "touched": 1195
+            },
+            "vt2": {
+              "total": 1041,
+              "touched": 1041
+            },
+            "vt3": {
+              "total": 801,
+              "touched": 801
+            },
+            "vCO1": {
+              "total": 651,
+              "touched": 651
+            },
+            "vrock1": {
+              "total": 624,
+              "touched": 624
+            },
+            "vt4": {
+              "total": 474,
+              "touched": 474
+            },
+            "vnu6": {
+              "total": 480,
+              "touched": 480
+            },
+            "vnu5": {
+              "total": 369,
+              "touched": 369
+            },
+            "vnu10": {
+              "total": 362,
+              "touched": 362
+            },
+            "vnu4": {
+              "total": 354,
+              "touched": 354
+            }
+          }
+        },
+        "3": {
+          "rows": 31350,
+          "extrapolated_rows": 0,
+          "levels_touched": 836,
+          "levels_without_rows": 6833,
+          "by_manifold": {
+            "vt0": {
+              "total": 1318,
+              "touched": 76
+            },
+            "vt1": {
+              "total": 1195,
+              "touched": 76
+            },
+            "vt2": {
+              "total": 1041,
+              "touched": 76
+            },
+            "vt3": {
+              "total": 801,
+              "touched": 76
+            },
+            "vCO1": {
+              "total": 651,
+              "touched": 76
+            },
+            "vrock1": {
+              "total": 624,
+              "touched": 76
+            },
+            "vt4": {
+              "total": 474,
+              "touched": 76
+            },
+            "vnu6": {
+              "total": 480,
+              "touched": 76
+            },
+            "vnu5": {
+              "total": 369,
+              "touched": 76
+            },
+            "vnu10": {
+              "total": 362,
+              "touched": 76
+            },
+            "vnu4": {
+              "total": 354,
+              "touched": 76
+            }
+          }
+        },
+        "6": {
+          "rows": 335378,
+          "extrapolated_rows": 0,
+          "levels_touched": 2696,
+          "levels_without_rows": 4973,
+          "by_manifold": {
+            "vt0": {
+              "total": 1318,
+              "touched": 254
+            },
+            "vt1": {
+              "total": 1195,
+              "touched": 254
+            },
+            "vt2": {
+              "total": 1041,
+              "touched": 254
+            },
+            "vt3": {
+              "total": 801,
+              "touched": 254
+            },
+            "vCO1": {
+              "total": 651,
+              "touched": 254
+            },
+            "vrock1": {
+              "total": 624,
+              "touched": 254
+            },
+            "vt4": {
+              "total": 474,
+              "touched": 246
+            },
+            "vnu6": {
+              "total": 480,
+              "touched": 244
+            },
+            "vnu5": {
+              "total": 369,
+              "touched": 230
+            },
+            "vnu10": {
+              "total": 362,
+              "touched": 227
+            },
+            "vnu4": {
+              "total": 354,
+              "touched": 225
+            }
+          }
+        }
+      },
+      "definition": "Endpoints present in rows; a present zero rate is not positive coupling."
+    },
+    {
+      "file": "a-13ch3oh-l33t-E2000-J46.dat",
+      "levels": 7714,
+      "colliders": {
+        "2": {
+          "rows": 1556888,
+          "extrapolated_rows": 1229898,
+          "levels_touched": 7714,
+          "levels_without_rows": 0,
+          "by_manifold": {
+            "vt0": {
+              "total": 1325,
+              "touched": 1325
+            },
+            "vt1": {
+              "total": 1209,
+              "touched": 1209
+            },
+            "vt2": {
+              "total": 1056,
+              "touched": 1056
+            },
+            "vt3": {
+              "total": 813,
+              "touched": 813
+            },
+            "vCO1": {
+              "total": 673,
+              "touched": 673
+            },
+            "vt4": {
+              "total": 479,
+              "touched": 479
+            },
+            "vrock1": {
+              "total": 637,
+              "touched": 637
+            },
+            "vnu6": {
+              "total": 457,
+              "touched": 457
+            },
+            "vnu5": {
+              "total": 372,
+              "touched": 372
+            },
+            "vnu10": {
+              "total": 347,
+              "touched": 347
+            },
+            "vnu4": {
+              "total": 346,
+              "touched": 346
+            }
+          }
+        },
+        "3": {
+          "rows": 31350,
+          "extrapolated_rows": 0,
+          "levels_touched": 836,
+          "levels_without_rows": 6878,
+          "by_manifold": {
+            "vt0": {
+              "total": 1325,
+              "touched": 76
+            },
+            "vt1": {
+              "total": 1209,
+              "touched": 76
+            },
+            "vt2": {
+              "total": 1056,
+              "touched": 76
+            },
+            "vt3": {
+              "total": 813,
+              "touched": 76
+            },
+            "vCO1": {
+              "total": 673,
+              "touched": 76
+            },
+            "vt4": {
+              "total": 479,
+              "touched": 76
+            },
+            "vrock1": {
+              "total": 637,
+              "touched": 76
+            },
+            "vnu6": {
+              "total": 457,
+              "touched": 76
+            },
+            "vnu5": {
+              "total": 372,
+              "touched": 76
+            },
+            "vnu10": {
+              "total": 347,
+              "touched": 76
+            },
+            "vnu4": {
+              "total": 346,
+              "touched": 76
+            }
+          }
+        },
+        "6": {
+          "rows": 332615,
+          "extrapolated_rows": 0,
+          "levels_touched": 2684,
+          "levels_without_rows": 5030,
+          "by_manifold": {
+            "vt0": {
+              "total": 1325,
+              "touched": 254
+            },
+            "vt1": {
+              "total": 1209,
+              "touched": 254
+            },
+            "vt2": {
+              "total": 1056,
+              "touched": 254
+            },
+            "vt3": {
+              "total": 813,
+              "touched": 254
+            },
+            "vCO1": {
+              "total": 673,
+              "touched": 254
+            },
+            "vt4": {
+              "total": 479,
+              "touched": 244
+            },
+            "vrock1": {
+              "total": 637,
+              "touched": 254
+            },
+            "vnu6": {
+              "total": 457,
+              "touched": 242
+            },
+            "vnu5": {
+              "total": 372,
+              "touched": 230
+            },
+            "vnu10": {
+              "total": 347,
+              "touched": 222
+            },
+            "vnu4": {
+              "total": 346,
+              "touched": 222
+            }
+          }
+        }
+      },
+      "definition": "Endpoints present in rows; a present zero rate is not positive coupling."
+    },
+    {
+      "file": "e-13ch3oh-l33t-E2000-J46.dat",
+      "levels": 7794,
+      "colliders": {
+        "2": {
+          "rows": 1649647,
+          "extrapolated_rows": 1319894,
+          "levels_touched": 7794,
+          "levels_without_rows": 0,
+          "by_manifold": {
+            "vt0": {
+              "total": 1331,
+              "touched": 1331
+            },
+            "vt1": {
+              "total": 1213,
+              "touched": 1213
+            },
+            "vt2": {
+              "total": 1058,
+              "touched": 1058
+            },
+            "vt3": {
+              "total": 813,
+              "touched": 813
+            },
+            "vCO1": {
+              "total": 676,
+              "touched": 676
+            },
+            "vrock1": {
+              "total": 637,
+              "touched": 637
+            },
+            "vt4": {
+              "total": 485,
+              "touched": 485
+            },
+            "vnu6": {
+              "total": 483,
+              "touched": 483
+            },
+            "vnu5": {
+              "total": 372,
+              "touched": 372
+            },
+            "vnu10": {
+              "total": 366,
+              "touched": 366
+            },
+            "vnu4": {
+              "total": 360,
+              "touched": 360
+            }
+          }
+        },
+        "3": {
+          "rows": 31350,
+          "extrapolated_rows": 0,
+          "levels_touched": 836,
+          "levels_without_rows": 6958,
+          "by_manifold": {
+            "vt0": {
+              "total": 1331,
+              "touched": 76
+            },
+            "vt1": {
+              "total": 1213,
+              "touched": 76
+            },
+            "vt2": {
+              "total": 1058,
+              "touched": 76
+            },
+            "vt3": {
+              "total": 813,
+              "touched": 76
+            },
+            "vCO1": {
+              "total": 676,
+              "touched": 76
+            },
+            "vrock1": {
+              "total": 637,
+              "touched": 76
+            },
+            "vt4": {
+              "total": 485,
+              "touched": 76
+            },
+            "vnu6": {
+              "total": 483,
+              "touched": 76
+            },
+            "vnu5": {
+              "total": 372,
+              "touched": 76
+            },
+            "vnu10": {
+              "total": 366,
+              "touched": 76
+            },
+            "vnu4": {
+              "total": 360,
+              "touched": 76
+            }
+          }
+        },
+        "6": {
+          "rows": 335378,
+          "extrapolated_rows": 0,
+          "levels_touched": 2696,
+          "levels_without_rows": 5098,
+          "by_manifold": {
+            "vt0": {
+              "total": 1331,
+              "touched": 254
+            },
+            "vt1": {
+              "total": 1213,
+              "touched": 254
+            },
+            "vt2": {
+              "total": 1058,
+              "touched": 254
+            },
+            "vt3": {
+              "total": 813,
+              "touched": 254
+            },
+            "vCO1": {
+              "total": 676,
+              "touched": 254
+            },
+            "vrock1": {
+              "total": 637,
+              "touched": 254
+            },
+            "vt4": {
+              "total": 485,
+              "touched": 246
+            },
+            "vnu6": {
+              "total": 483,
+              "touched": 244
+            },
+            "vnu5": {
+              "total": 372,
+              "touched": 230
+            },
+            "vnu10": {
+              "total": 366,
+              "touched": 227
+            },
+            "vnu4": {
+              "total": 360,
+              "touched": 225
+            }
+          }
+        }
+      },
+      "definition": "Endpoints present in rows; a present zero rate is not positive coupling."
+    }
+  ]
+}

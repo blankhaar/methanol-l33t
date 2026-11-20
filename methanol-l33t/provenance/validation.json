@@ -1,0 +1,267 @@
+{
+  "schema_version": 2,
+  "source_package_version": "1.0",
+  "product_version": "l33t-v3",
+  "date": "2026-11-20",
+  "status": "release-1.0-of-adopted-numerical-model",
+  "adoption_record": "provenance/adoption.json",
+  "changes_since_rc2": [
+    "Owner adoption; current extraction status and legacy DAT title explanation.",
+    "Current provenance separated from dated rc2 evidence.",
+    "Explicit invariant exceptions; -OO-safe help; no inherited PYTHONOPTIMIZE in child generators.",
+    "Independent zero-row disclosure and numerical-rounding correction."
+  ],
+  "rc2_numerical_verification": {
+    "date": "2026-11-06",
+    "source_package_version": "0.1.0rc2",
+    "product_version": "l33t-v3",
+    "status": "full-relocated-native-rebuild-exact-v3-pass-local-review",
+    "environment": {
+      "python": "3.12.10 | packaged by conda-forge | (main, Apr 10 2025, 22:19:24) [Clang 18.1.8 ]",
+      "platform": "macOS-26.5.1-arm64-arm-64bit",
+      "compiler": "GNU Fortran (Homebrew GCC 16.2.0) 16.2.0",
+      "threads_per_native_process": 1
+    },
+    "fresh": {
+      "input_files_sha256_checked": 97,
+      "input_bytes": 153588511,
+      "normalized_collision_rows": 419322,
+      "native_isotopes": [
+        "12",
+        "13"
+      ],
+      "native_modes": [
+        "PERMANENT",
+        "VCO_A",
+        "VCO_C"
+      ],
+      "native_Jmax": 46,
+      "native_abs_Kmax": 22,
+      "full_rebuild_wall_seconds": 660.5469254580094,
+      "DAT_byte_matches": 4,
+      "sidecar_byte_matches": 12,
+      "unit_tests_passed": 31,
+      "optimized_python_tests_passed": 31,
+      "full_stream_levels": 30777,
+      "full_stream_radiative_rows": 627878,
+      "full_stream_collision_rows": 7811683,
+      "relocation": "complete source-plus-input ZIP extracted into a new temporary tree outside the research workspace; full build without access to original resource paths",
+      "native_cache_comparison": {
+        "record": "native-cache-validation.json",
+        "Jmax": 12,
+        "operators": [
+          "PERMANENT",
+          "VCO_A"
+        ],
+        "both_isotopes": true,
+        "rows": 143176,
+        "maximum_relative": 3.894087782757634e-12,
+        "passed": true
+      },
+      "collider_coverage": "collider-coverage.json: actual endpoint counts, per collider and manifold",
+      "portable_verification": {
+        "same_data_changed_gzip": "accepted by content mode; rejected by archive-byte mode",
+        "changed_csv_content": "rejected",
+        "full_DAT_comparator": "all four complete reference files traversed and self-matched; separate synthetic identity/grid/rate/order/zero/tolerance cases pass"
+      },
+      "hybrid_zero_fix": "all factors unchanged on locked inputs; no zero quartet ratios; 370 RF zero nodes per collider remain",
+      "manifest_hygiene": "verified statuses and role-based local paths; optimized-Python patch guards; checked on fresh outputs",
+      "numerical_source_identity": [
+        {
+          "file": "scripts/hybrid_e_lowj.py",
+          "difference": "trailing whitespace only; AST and stripped text identical",
+          "executed_sha256": "0adb124a0c32eecbe5165fe21354cfb59a8ba8a92dce02df893059da26487477",
+          "final_sha256": "a51bd88e632829da8cc716f533b20d4d3e06f270692d5f76c41632f277379155"
+        }
+      ],
+      "gzip_extraction": {
+        "all_four_DAT_gzip_roundtrip": "pass",
+        "aligned_sidecar_hashes": 12,
+        "extraction_members_checked": 16,
+        "output_bytes": 398634774,
+        "limits": "Generated delivery is local test output; not public distribution."
+      }
+    },
+    "document": {
+      "pages": 9,
+      "source": "release/l33t/docs/companion.tex",
+      "pdf_sha256": "517c516e0ccc0a4bfa919180604df83459bff72fd70aa1921793ba8e9067c8c7",
+      "visual_inspection": "All nine pages inspected; final pages 1-6 pixel-identical to inspected first render, final pages 7-9 reinspected. No clipped text, split reference entries or layout defects.",
+      "latex": "pass without overfull/underfull boxes or unresolved citations"
+    },
+    "bibliography": {
+      "date": "2026-11-06",
+      "inherited_citation_metadata": "release/l33t/docs/doi-metadata-verification.json",
+      "bibliography_entries_added_or_changed": 0,
+      "CITATION_cff_reference_added": "Hougen, Kleiner and Godefroid 1994; verified existing DOI/NIST record reused",
+      "citation_audit": {
+        "entries": 11,
+        "cited": 11,
+        "missing": [],
+        "unused": [],
+        "duplicate_identifiers": []
+      },
+      "bib_validation_warning": "XuEtAl2014C13 retains published DOI plus redundant arXiv identifier; publication metadata are already used. Thesis identity remains inherited, not newly retrieved."
+    },
+    "source_archive": "Final ZIP identities and per-member verification are held in the maintainer review receipt to avoid a self-hash cycle.",
+    "limits": [
+      "Same host/toolchain; no Linux or second-platform native build. Docker, Podman and Colima were unavailable.",
+      "Numerical verification and contraction equivalence do not establish physical accuracy or independently audit all primary-paper inputs.",
+      "Frozen source/observation adjudications remain inputs; no new collision model, molecular version or operational adoption.",
+      "Public code license, final contributor approval and artifact-specific input/product terms remain owner release decisions. No upload or merge."
+    ],
+    "inherited_independent_audit": "prior-validation.json; direct-c contraction and consumer tests are inherited evidence",
+    "previous_package_preparation": {
+      "date": "2026-11-04",
+      "status": "fresh-full-rebuild-exact-v3-pass",
+      "product_version": "l33t-v3",
+      "source_package_version": "0.1.0rc1",
+      "environment": {
+        "python": "3.12.10 | packaged by conda-forge | (main, Apr 10 2025, 22:19:24) [Clang 18.1.8 ]",
+        "platform": "macOS-26.5.1-arm64-arm-64bit",
+        "compiler": "GNU Fortran (Homebrew GCC 16.2.0) 16.2.0",
+        "threads_per_native_process": 1
+      },
+      "fresh": {
+        "input_files_sha256_checked": 97,
+        "normalized_collision_rows": 419322,
+        "native_isotopes": [
+          "12",
+          "13"
+        ],
+        "native_modes": [
+          "PERMANENT",
+          "VCO_A",
+          "VCO_C"
+        ],
+        "native_Jmax": 46,
+        "native_abs_Kmax": 22,
+        "native_generation_floor_D2": 1e-06,
+        "full_rebuild_wall_seconds": 639.6018057080073,
+        "DAT_byte_matches": 4,
+        "sidecar_byte_matches": 12,
+        "unit_tests_passed": 10,
+        "full_stream_levels": 30777,
+        "full_stream_radiative_rows": 627878,
+        "full_stream_collision_rows": 7811683,
+        "relocated_source_unit_tests_passed": 10,
+        "relocated_input_hashes_passed": 97,
+        "relocated_native_smoke": {
+          "isotope": "12",
+          "Jmax": 2,
+          "modes": [
+            "PERMANENT",
+            "VCO_A",
+            "VCO_C"
+          ]
+        },
+        "gzip_extraction": "main isotope A file and three sidecars; compressed/expanded SHA-256 verified"
+      },
+      "document": {
+        "pages": 8,
+        "latex_build": "pass; no overfull/underfull boxes or unresolved citations",
+        "visual_inspection": "Final eight pages inspected; final pages 1–7 pixel-identical to inspected render after reference-layout adjustment.",
+        "bibliography_entries": 11,
+        "cite_audit": "no missing/unused/duplicate entries",
+        "metadata": "Nine DOI responses and one publisher verification; new Hougen1994 also corroborated by NIST. Print-year distinction documented.",
+        "bibliography_warning": "Thesis identity retained from existing provenance; no new library retrieval. Published Xu2014 record also carries its arXiv identifier."
+      },
+      "inherited_independent_audit": "prior-validation.json; direct-c contraction, source donor and actual consumer tests are prior evidence, not newly repeated here",
+      "limits": [
+        "Same-host fresh native and file regeneration, not a second-platform or newly provisioned environment test.",
+        "Empirical source transcriptions and accepted observed-frequency identity crosswalk are pinned inputs, not regenerated adjudications.",
+        "No new scattering calculation, scientific adoption or public distribution.",
+        "Final package code license/contributor credits and artifact-specific terms remain unrecorded. Owner intends sharing with BELGI-Cs acknowledgement; archived upstream license text is absent."
+      ],
+      "source_archive": "Allowlisted export passes ZIP CRC and member hashes; relocated checks use the exported code. Final archive checksum is stored in the maintainer preparation record to avoid a self-hash cycle.",
+      "documentation_revision": {
+        "id": "belgi-cs-attribution-20261104",
+        "date": "2026-11-04",
+        "change": "Explicit BELGI-Cs citation and Python/native Fortran implementation identity; owner sharing intent and source-license provenance distinguished.",
+        "code_inputs_product_locks_unchanged": true,
+        "numerical_rebuild_repeated": false,
+        "bibliography_entries": 11,
+        "pages": 8,
+        "latex_warnings": []
+      }
+    }
+  },
+  "limits": [
+    "The complete native reconstruction is the dated rc2 run above. Subsequent checks include the rc4 main-isotope PERMANENT run through J=46.",
+    "Native reproduction on a second platform has not been tested.",
+    "Regeneration from source requires the 97 locked inputs separately. Model and collider-coverage qualifications are in the companion."
+  ],
+  "rc4_checks_2026_11_06": {
+    "status": "passed",
+    "unit_tests": {
+      "count": 31,
+      "modes": [
+        "normal",
+        "-O",
+        "-OO"
+      ],
+      "result": "pass"
+    },
+    "optimized_CLI_help": {
+      "build_l33t": "pass under -OO",
+      "spectroscopy": "pass under -OO"
+    },
+    "child_optimization_guard": {
+      "caller_PYTHONOPTIMIZE": "2",
+      "child_optimize": 0,
+      "child_PYTHONOPTIMIZE": null,
+      "result": "pass"
+    },
+    "current_verifier": {
+      "products": 4,
+      "expanded_sidecars": 12,
+      "result": "pass before A12 extraction"
+    },
+    "current_extraction": {
+      "isotope": "12",
+      "species": "A",
+      "compressed_DAT_roundtrip": "exact v3 bytes",
+      "sidecars": 3,
+      "status": "adopted for numerical experiments"
+    },
+    "independent_Claude_rc3_review": {
+      "date": "2026-11-06",
+      "tests": 31,
+      "input_hashes": 97,
+      "all_four_collider_counts": "independently reproduced",
+      "native_cache_strengths": 143176,
+      "native_cache_result": "pass; max relative 3.894087782757634e-12",
+      "no_new_numerical_defect": true
+    },
+    "document": {
+      "pages": 9,
+      "pdf_sha256": "0773d91343b64c429506d992ca62bdbb4fb4ee8aee4a4bf4d7ae3e4089dadfe4",
+      "visual_check": "Pages 1,5-9 inspected; pages 2-4 identical to inspected rc3 render. All pages checked.",
+      "latex_warnings": []
+    }
+  },
+  "release_1_0": {
+    "public_tag": "v1.0",
+    "numerical_product": "l33t-v3",
+    "product_manifest_sha256": "bc537af07e5049845fe9cd344d9b97c446f3dab0da0aa8a628f52ade3d796eb0",
+    "companion_pdf_sha256": "c3d914b5ed83ce945b848c15d6eba0615ae454b81f3983fb018395634a08d4be",
+    "packaging_scope": "Four per-species archives containing DAT files and three provenance tables each. Archive checksums appear in SHA256SUMS at the repository root. All public source members except the manifest itself are hashed in SOURCE-MANIFEST.json.",
+    "numerical_implementation": "Public versioning, documentation and receipt labels changed. The data-generating algorithms and input and product locks are the reviewed rc4 versions.",
+    "preceding_checks_2026_11_20": {
+      "tests_per_python_mode": 31,
+      "modes": [
+        "normal",
+        "-O",
+        "-OO"
+      ],
+      "verified_data_files": 4,
+      "verified_provenance_tables": 12,
+      "main_isotope_PERMANENT_Jmax": 46,
+      "matched_native_csv": [
+        "levels.csv",
+        "native-lines.csv",
+        "lines.csv"
+      ]
+    }
+  }
+}

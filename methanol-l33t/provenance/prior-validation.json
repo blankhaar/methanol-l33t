@@ -1,0 +1,67 @@
+{
+  "all_other_strength_floors_D2": 0.0001,
+  "collision_rows": 7811683,
+  "compact_added_rows": [
+    {
+      "bytes": 221743,
+      "path": "evidence/added-radiative-rows/a-12ch3oh.csv.gz",
+      "rows": 5915,
+      "sha256": "9cd69be48ae9d5975a4def554f44395d74d2f20d69f232b27e5f2fd172b4d746"
+    },
+    {
+      "bytes": 312829,
+      "path": "evidence/added-radiative-rows/e-12ch3oh.csv.gz",
+      "rows": 8023,
+      "sha256": "69ff022b981b6dabfb0ae8f3c1527959c9fc5b3b04781cff923b3d1cb747d0d2"
+    },
+    {
+      "bytes": 232455,
+      "path": "evidence/added-radiative-rows/a-13ch3oh.csv.gz",
+      "rows": 6212,
+      "sha256": "3286d0db65b55776aa7352abdc5a07abd3163bc842c907c81c962844ad213976"
+    },
+    {
+      "bytes": 319693,
+      "path": "evidence/added-radiative-rows/e-13ch3oh.csv.gz",
+      "rows": 8197,
+      "sha256": "63c9a475e636bac54352771c451abb9d49caa9ba9ac7e0841b4e8b799db2c06f"
+    }
+  ],
+  "consumer": {
+    "full_assembled_pairs": 6372797,
+    "max_balance_residual": 3.8432778400543225e-15,
+    "max_rate_relative_error": 0.0,
+    "temperature_K": 250.0
+  },
+  "distributed_product_hashes_checked": 20,
+  "existing_v2_radiation_preserved": "Every prior row has identical endpoint identities, strength, frequency, A and operator; row numbering changes.",
+  "full_stream_products_passed": 4,
+  "independent_c": {
+    "lower_J_max": 13,
+    "maximum_product_relative_error": 4.0545344859310717e-13,
+    "product_branches": 13614,
+    "species": "A/E, both isotopes",
+    "upper_J_max": 12
+  },
+  "inherited_source_and_helper_pins_checked": 46,
+  "level_and_collision_inheritance": "Every serialized level and full collision section identical to v2; aligned sidecars also identical in expanded bytes.",
+  "levels": 30777,
+  "limits": [
+    "Frozen-ground constant-c model and existing band/isotope/high-J assumptions remain.",
+    "Collision rates and their measured backtest errors are unchanged.",
+    "Spontaneous-rate convergence is not a non-LTE or pump-rate convergence test.",
+    "No fresh Hamiltonian solve, collision calculation, population solve or operational adoption."
+  ],
+  "loss_reference": "All available native VCO_C strengths, with both product endpoints retained. Native reference strength floor 1e-6 D2 at 0.27 D; finite vt0-4 basis.",
+  "maximum_nu10_spontaneous_rate_loss_fraction": 6.670288610203083e-05,
+  "nu10_crossband_floor_D2": 1e-07,
+  "owner_choice_date": "2026-11-01",
+  "prior_v2_DAT_hashes_unchanged": true,
+  "product_version": "l33t-v3",
+  "radiative_rows": 627878,
+  "radiative_rows_added": 28347,
+  "radiative_rows_removed_or_changed": 0,
+  "reproduction": "README.txt and evidence/build-invocations.json in reports/l33t-v3-2026-11-01",
+  "script_sha256": "a5c698e68d8c2f18534b1d41b50eca5cd1c45948c81489430b2843f0a24df718",
+  "status": "numerical-validation-pass"
+}

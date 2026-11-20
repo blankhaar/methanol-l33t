@@ -1,0 +1,93 @@
+[
+  {
+    "key": "Dagdigian2024",
+    "doi": "10.1093/mnras/stad3303",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1093/mnras/stad3303",
+    "retrieved": "2026-11-04",
+    "issue_year_adjudication": {
+      "retained_year": 2024,
+      "DOI_negotiation_year": 2023,
+      "reason": "Publisher issue is January 2024; DOI metadata carries online-first year.",
+      "publisher_url": "https://academic.oup.com/mnras/article/527/2/2209/7332932"
+    }
+  },
+  {
+    "key": "RabliFlower2010H2",
+    "doi": "10.1111/j.1365-2966.2010.16671.x",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1111/j.1365-2966.2010.16671.x",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "RabliFlower2010He",
+    "doi": "10.1111/j.1365-2966.2010.16240.x",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1111/j.1365-2966.2010.16240.x",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "RabliFlower2011",
+    "doi": "10.1111/j.1365-2966.2010.17842.x",
+    "status": "publisher-metadata-verified",
+    "metadata_source": "https://academic.oup.com/mnras/article/411/3/2093/973619",
+    "retrieved": "2026-11-04",
+    "verified_fields": [
+      "title",
+      "DOI",
+      "journal",
+      "volume",
+      "issue",
+      "pages",
+      "issue year"
+    ],
+    "retrieval_note": "DOI content negotiation returned 429; publisher record confirms citation."
+  },
+  {
+    "key": "XuEtAl2008",
+    "doi": "10.1016/j.jms.2008.03.017",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1016/j.jms.2008.03.017",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "XuEtAl2014C13",
+    "doi": "10.1016/j.jms.2014.06.005",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1016/j.jms.2014.06.005",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "Xu_2004",
+    "doi": "10.1016/j.jms.2004.05.017",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1016/j.jms.2004.05.017",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "Mukhopadhyay_1995",
+    "doi": "10.1063/1.469359",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1063/1.469359",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "PredoiCross1997",
+    "status": "inherited-thesis-record-no-DOI"
+  },
+  {
+    "key": "Sunaga_2026",
+    "doi": "10.1039/d6cp00608f",
+    "status": "DOI-metadata-retrieved",
+    "metadata_source": "https://doi.org/10.1039/d6cp00608f",
+    "retrieved": "2026-11-04"
+  },
+  {
+    "key": "Hougen_1994",
+    "doi": "10.1006/jmsp.1994.1047",
+    "status": "DOI-metadata-retrieved-and-NIST-corroborated",
+    "metadata_source": "https://doi.org/10.1006/jmsp.1994.1047",
+    "retrieved": "2026-11-04",
+    "primary_source": "https://www.nist.gov/publications/selection-rules-and-intensity-calculations-cs-asymmetric-top-molecule-containing-methyl"
+  }
+]

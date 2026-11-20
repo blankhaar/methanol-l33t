@@ -1,0 +1,215 @@
+{
+  "Jmax": 12,
+  "checks": [
+    {
+      "atol_D2": 1e-18,
+      "failures": 0,
+      "identities_equal": true,
+      "isotope": "12",
+      "maximum_relative": 3.0417059238601056e-12,
+      "mode": "PERMANENT",
+      "rows": 69026,
+      "rtol": 1e-10
+    },
+    {
+      "atol_D2": 1e-18,
+      "failures": 0,
+      "identities_equal": true,
+      "isotope": "12",
+      "maximum_relative": 2.803542006455523e-14,
+      "mode": "VCO_A",
+      "rows": 2617,
+      "rtol": 1e-10
+    },
+    {
+      "atol_D2": 1e-18,
+      "failures": 0,
+      "identities_equal": true,
+      "isotope": "13",
+      "maximum_relative": 3.894087782757634e-12,
+      "mode": "PERMANENT",
+      "rows": 68931,
+      "rtol": 1e-10
+    },
+    {
+      "atol_D2": 1e-18,
+      "failures": 0,
+      "identities_equal": true,
+      "isotope": "13",
+      "maximum_relative": 2.3226389785981862e-14,
+      "mode": "VCO_A",
+      "rows": 2602,
+      "rtol": 1e-10
+    }
+  ],
+  "compilation": {
+    "False": {
+      "command": [
+        "/opt/homebrew/Cellar/gcc/16.2.0/bin/gfortran-16",
+        "-std=legacy",
+        "-ffixed-line-length-none",
+        "-ffree-line-length-none",
+        "-fallow-argument-mismatch",
+        "-O2",
+        "-I",
+        "@inputs/vendor/belgi",
+        "@package/fortran/parity_state_repair.f90",
+        "@package/fortran/belgi_frozen_strengths.f",
+        "@output/native/setup.f",
+        "@output/native/repaired-rottor.f",
+        "@inputs/vendor/belgi/htorse.f",
+        "@inputs/vendor/belgi/aset.f",
+        "@inputs/vendor/belgi/hrtset.f",
+        "@inputs/vendor/belgi/h.f",
+        "@output/native/repaired-encal.f",
+        "@inputs/vendor/belgi/vset.f",
+        "@inputs/vendor/belgi/vrtdi.f",
+        "@inputs/vendor/belgi/resum.f",
+        "@inputs/vendor/belgi/matout.f",
+        "@inputs/vendor/belgi/iposa.f",
+        "@inputs/vendor/belgi/ipose.f",
+        "@inputs/vendor/belgi/parity.f",
+        "@inputs/vendor/belgi/irep.f",
+        "@inputs/vendor/belgi/encal2.f",
+        "@inputs/vendor/belgi/vtors.f",
+        "@inputs/vendor/belgi/rule.f",
+        "@inputs/vendor/belgi/printener.f",
+        "@inputs/vendor/belgi/printderivl.f",
+        "@inputs/vendor/belgi/expectation.f",
+        "@inputs/vendor/belgi/factt.f",
+        "@inputs/vendor/belgi/ad3j.f",
+        "@output/native/repaired-inten.f",
+        "@inputs/vendor/belgi/pythag.f",
+        "@inputs/vendor/belgi/blockdata.f",
+        "-Wl,-framework",
+        "-Wl,Accelerate",
+        "-o",
+        "@output/native/strengths"
+      ],
+      "patches": {
+        "encal.f": {
+          "compiled_sha256": "d4b978319f2e633d21c21be77dd249752eea0bda239e8edfa0356baf3f05e920",
+          "original_sha256": "51ddd613b275da61d3669b7269744372b237819251ba88729d889e119932b02e",
+          "reason": "A: consume globally assigned parity-consistent column; both species retain full nine torsional blocks",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "inten.f": {
+          "compiled_sha256": "53e2bbdeb9249b47b8a6116cf9dd2bfe919b1b793fcfdf3b4430c7d1c4926d87",
+          "original_sha256": "4719669139153f9ae7ee7e71293391e4d0a9ae502d316ba50104cddfb27248ed",
+          "reason": "remove state-dependent coefficient-product pruning; use double-precision sqrt(2) in complete signed dipole contractions",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "parity_state_repair.f90": {
+          "reason": "native physical parity block diagonalization and gauge-invariant full-state Hungarian assignment",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1",
+          "source_sha256": "8e82c0efdafd8aa75ce2bb045a04228017f8dfa39c0db99a39a5fb6bb18745b6"
+        },
+        "rottor.f": {
+          "compiled_sha256": "01edb77cef2cd6cfc71a5816c94df5ab95a2f838d60bf207e0acb90c03cd4d89",
+          "original_sha256": "6e68e573e865d00c61bd19122dd078bcffb88eaed66dac97fe9e30bbb643aebf",
+          "reason": "A: explicit physical PER23 eigenspaces, H block solves and full-state bijective reference assignment; E: full unchanged symmetric eigenproblem",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "setup.f": {
+          "compiled_sha256": "52b6977d3346e1468210fb69774791e0aa385e96fa69b2681330bad158e5acd8",
+          "original_sha256": "2cbd8781b54ca003c5dff807d238e4a41498f08561620bd28e88e940502a1361",
+          "reason": "prevent SETUP from clearing 95 entries in VECTPR's 93-element KDMX dimension and corrupting ENCAL2 state tracking",
+          "replacement": "max = 2*nn2+1 -> max = kdmx"
+        }
+      },
+      "version": "GNU Fortran (Homebrew GCC 16.2.0) 16.2.0"
+    },
+    "True": {
+      "command": [
+        "/opt/homebrew/Cellar/gcc/16.2.0/bin/gfortran-16",
+        "-std=legacy",
+        "-ffixed-line-length-none",
+        "-ffree-line-length-none",
+        "-fallow-argument-mismatch",
+        "-O2",
+        "-I",
+        "@inputs/vendor/belgi",
+        "@package/fortran/parity_state_repair.f90",
+        "@package/fortran/cached_dipole_repair.f90",
+        "@package/fortran/cached_inten.f",
+        "@output/cached/repaired-cached-strengths.f",
+        "@output/cached/setup.f",
+        "@output/cached/repaired-rottor.f",
+        "@inputs/vendor/belgi/htorse.f",
+        "@inputs/vendor/belgi/aset.f",
+        "@inputs/vendor/belgi/hrtset.f",
+        "@inputs/vendor/belgi/h.f",
+        "@output/cached/repaired-encal.f",
+        "@inputs/vendor/belgi/vset.f",
+        "@inputs/vendor/belgi/vrtdi.f",
+        "@inputs/vendor/belgi/resum.f",
+        "@inputs/vendor/belgi/matout.f",
+        "@inputs/vendor/belgi/iposa.f",
+        "@inputs/vendor/belgi/ipose.f",
+        "@inputs/vendor/belgi/parity.f",
+        "@inputs/vendor/belgi/irep.f",
+        "@inputs/vendor/belgi/encal2.f",
+        "@inputs/vendor/belgi/vtors.f",
+        "@inputs/vendor/belgi/rule.f",
+        "@inputs/vendor/belgi/printener.f",
+        "@inputs/vendor/belgi/printderivl.f",
+        "@inputs/vendor/belgi/expectation.f",
+        "@inputs/vendor/belgi/factt.f",
+        "@inputs/vendor/belgi/ad3j.f",
+        "@output/cached/repaired-inten.f",
+        "@inputs/vendor/belgi/pythag.f",
+        "@inputs/vendor/belgi/blockdata.f",
+        "-Wl,-framework",
+        "-Wl,Accelerate",
+        "-o",
+        "@output/cached/strengths"
+      ],
+      "patches": {
+        "cached_dipole_repair.f90": {
+          "source_sha256": "4398edfe38dbaa63e6748f73d6db4138a8a3514a165274096d3eecf0f66f4e52"
+        },
+        "cached_inten.f": {
+          "source_sha256": "d176249c6509ce9966e6a3de11f6a964c11e654799e952f3ed33a6ba4c1dbced"
+        },
+        "cached_strength_driver": {
+          "compiled_sha256": "314a05ec9c00085a086005872ca75d02e07b99a1962990c2ff97cb39c59bed31",
+          "original_sha256": "80ff84070f33f5c247b2cc696357df49fcb47ae11e41e385d09f2dd766f3f119",
+          "reason": "Exact full-operator BLAS contractions with signed components; no forbidden-edge filtering; direct INTEN validation is separate",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "encal.f": {
+          "compiled_sha256": "d4b978319f2e633d21c21be77dd249752eea0bda239e8edfa0356baf3f05e920",
+          "original_sha256": "51ddd613b275da61d3669b7269744372b237819251ba88729d889e119932b02e",
+          "reason": "A: consume globally assigned parity-consistent column; both species retain full nine torsional blocks",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "inten.f": {
+          "compiled_sha256": "53e2bbdeb9249b47b8a6116cf9dd2bfe919b1b793fcfdf3b4430c7d1c4926d87",
+          "original_sha256": "4719669139153f9ae7ee7e71293391e4d0a9ae502d316ba50104cddfb27248ed",
+          "reason": "remove state-dependent coefficient-product pruning; use double-precision sqrt(2) in complete signed dipole contractions",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "parity_state_repair.f90": {
+          "reason": "native physical parity block diagonalization and gauge-invariant full-state Hungarian assignment",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1",
+          "source_sha256": "8e82c0efdafd8aa75ce2bb045a04228017f8dfa39c0db99a39a5fb6bb18745b6"
+        },
+        "rottor.f": {
+          "compiled_sha256": "01edb77cef2cd6cfc71a5816c94df5ab95a2f838d60bf207e0acb90c03cd4d89",
+          "original_sha256": "6e68e573e865d00c61bd19122dd078bcffb88eaed66dac97fe9e30bbb643aebf",
+          "reason": "A: explicit physical PER23 eigenspaces, H block solves and full-state bijective reference assignment; E: full unchanged symmetric eigenproblem",
+          "repair_id": "native-PER23-blocksolve-global-all9-overlap-v1"
+        },
+        "setup.f": {
+          "compiled_sha256": "52b6977d3346e1468210fb69774791e0aa385e96fa69b2681330bad158e5acd8",
+          "original_sha256": "2cbd8781b54ca003c5dff807d238e4a41498f08561620bd28e88e940502a1361",
+          "reason": "prevent SETUP from clearing 95 entries in VECTPR's 93-element KDMX dimension and corrupting ENCAL2 state tracking",
+          "replacement": "max = 2*nn2+1 -> max = kdmx"
+        }
+      },
+      "version": "GNU Fortran (Homebrew GCC 16.2.0) 16.2.0"
+    }
+  },
+  "passed": true,
+  "scope": "Shared repaired eigensystem; tests contraction equivalence, not independent Hamiltonian physics or the c operator."
+}

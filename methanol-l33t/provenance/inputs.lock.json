@@ -1,0 +1,879 @@
+{
+  "files": [
+    {
+      "bytes": 748,
+      "path": "config/observed-frequencies.json",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "explicit measured-frequency overrides",
+      "sha256": "892593d0172d41df162bcfe888ac21f73623c890b67d9f0b2fc0b33c1216cd0d",
+      "source_path": "config/observed-frequencies.json",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 4764,
+      "path": "config/vibrational-revision-2026-10-16/sources.json",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "CO calibration and vibrational model",
+      "sha256": "8957b4f8e1a477a39fee3074d54c83bc62168e4afdcf1cdc0321699cd1f7c51e",
+      "source_path": "config/vibrational-revision-2026-10-16/sources.json",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 463301,
+      "path": "data/normalized/master/levels.csv",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "frozen collision identity basis (J<=22, |K|<=14, vt<=2)",
+      "sha256": "d8a5afbd2793c67c0181af35d5339660ea4bce4f892bd34ea68a33a496d734bc",
+      "source_path": "data/normalized/master/levels.csv",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 4880,
+      "path": "data/raw/local-cache/xu2008-final-constants.txt",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "Xu2008",
+      "sha256": "11353561e41ef266477e76898282d46b58f7fe92f228cd1f41061b9c95716f3d",
+      "source_path": "data/raw/local-cache/xu2008-final-constants.txt",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-A_H2-para_statetostate_ID469_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "8c79e9d3b9d5cafa4cdb1495298f189a917ade18ae9a5cac175391578016be72",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_H2-para_statetostate_ID469_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-A_H2-para_statetostate_ID470_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "97747935a7d2c9e77c9af6fdbadee7e1248202bff576bbee89bd7daa12ed9ad4",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_H2-para_statetostate_ID470_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-A_H2-para_statetostate_ID472_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "67edc6e7ba614023609abd9fecd53572219064cc6006e761e7a4bef2f58badc1",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_H2-para_statetostate_ID472_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID463_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-he-vt012 BASECOL V1 2023-04",
+      "sha256": "5556da40e22b2f69c32c1469f25f380ed6bf7f0c88021c33e5f30eda93a6e9f5",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID463_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID464_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-he-vt012 BASECOL V1 2023-04",
+      "sha256": "a26eb8dbae8c3619ae1d010f8c6d7962dc14f4ccfb42f399a6e44b0b14fb7ba1",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID464_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID465_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-he-vt012 BASECOL V1 2023-04",
+      "sha256": "fc51fcc866807d9a9efadc7551795d5cfa05aceba00c07183c46551600406a24",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID465_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 7007634,
+      "path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID476_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2011-he-torsion-changing BASECOL V1 2023-04",
+      "sha256": "c385b88f5d77db7e3e535883ddeb8e352f92246627ef5506cda5ccd3ec57fbbe",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_He_statetostate_ID476_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 21754,
+      "path": "data/raw/official/basecol2023/CH3OH-A_IDT371_vt1_IDC463_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "768687d1d4e9d3fb4e8c545ddf3d94684cba5be0710754eb82d542eeac574a3f",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_IDT371_vt1_IDC463_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 21754,
+      "path": "data/raw/official/basecol2023/CH3OH-A_IDT372_vt1_IDC464_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "554d537d456ca3737324123f2799bb8869502286abd79fd6c61beb027e2a54dd",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_IDT372_vt1_IDC464_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 21754,
+      "path": "data/raw/official/basecol2023/CH3OH-A_IDT373_vt1_IDC465_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "b07ee0aac6c1204b648151cdbcfac1ede8bed0b94048cab1179c8150dbcc576a",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_IDT373_vt1_IDC465_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 12868,
+      "path": "data/raw/official/basecol2023/CH3OH-A_IDT379_vt1_IDC476_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2011-he-torsion-changing BASECOL V1 2023-04",
+      "sha256": "7cf22681a0a89376bf4429e4e632f1dcc1aa2ea274d0342f8501f70dab91b97b",
+      "source_path": "data/raw/official/basecol2023/CH3OH-A_IDT379_vt1_IDC476_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-E_H2-para_statetostate_ID473_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "02bfaf57b85ef660f0a91933361f17af21722da2e5e1877493850c4068d87e58",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_H2-para_statetostate_ID473_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-E_H2-para_statetostate_ID474_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "67f9a838bbf56ee882fa34460e28bacaf041fbed1d59e478db893d29fbdc37b5",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_H2-para_statetostate_ID474_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-E_H2-para_statetostate_ID475_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "4d4ea7a47c79213e381dc998135d392904b9af103c880431220dcf2470ad4dff",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_H2-para_statetostate_ID475_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID466_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-he-vt012 BASECOL V1 2023-04",
+      "sha256": "1226ebe7374dab3f2dabdc93c5d3ec95d9ccd7394158ffd41a6f4e0cc422c79b",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID466_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID467_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-he-vt012 BASECOL V1 2023-04",
+      "sha256": "1da121f4953332c24edf69ed1321b1bf8cd0b9cfb1824efce6ace51204f35ea6",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID467_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 10673889,
+      "path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID468_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-he-vt012 BASECOL V1 2023-04",
+      "sha256": "d8e5673e65718ddcf821a559e1ecdb86727f98a3e8e76df5511dbc244fe16fe9",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID468_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 7007634,
+      "path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID477_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2011-he-torsion-changing BASECOL V1 2023-04",
+      "sha256": "f0cf178a714bd2d3d49c826f7c7c82734830c32a2dd564e06910a689c9dcd7cb",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_He_statetostate_ID477_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 21754,
+      "path": "data/raw/official/basecol2023/CH3OH-E_IDT374_vt1_IDC466_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "11b6e763ef1e0219ec96bb5f6cd5e763a109026a242f5269515dcd8706db6ee5",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_IDT374_vt1_IDC466_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 21754,
+      "path": "data/raw/official/basecol2023/CH3OH-E_IDT377_vt1_IDC467_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "1e76e6db844cdacc532e976a5e22551f8323f8d3fbfb302f57051bde3cb35a13",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_IDT377_vt1_IDC467_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 21754,
+      "path": "data/raw/official/basecol2023/CH3OH-E_IDT378_vt1_IDC468_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2010-h2-vt012 BASECOL V1 2023-04",
+      "sha256": "f5bf96a63d33b14a99cb597c9cc7964f1c1f2d5438f21d47c4139421bce4b82e",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_IDT378_vt1_IDC468_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 12868,
+      "path": "data/raw/official/basecol2023/CH3OH-E_IDT380_vt1_IDC477_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "rabli-flower2011-he-torsion-changing BASECOL V1 2023-04",
+      "sha256": "27f0e995ce6e22451aa7f1eccf35c59b10e55db00a4eaa09f474b978c182c3fd",
+      "source_path": "data/raw/official/basecol2023/CH3OH-E_IDT380_vt1_IDC477_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 633200,
+      "path": "data/raw/official/basecol2025/CH3OH-A_H2-ortho_statetostate_ID580_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "dagdigian2024-h2 BASECOL V1 2025-07",
+      "sha256": "381a8dc8d428caff6bb8331153d6f1d6867675e3fd3f1b2850f7485316b8ba94",
+      "source_path": "data/raw/official/basecol2025/CH3OH-A_H2-ortho_statetostate_ID580_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 633200,
+      "path": "data/raw/official/basecol2025/CH3OH-A_H2-para_statetostate_ID581_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "dagdigian2024-h2 BASECOL V1 2025-07",
+      "sha256": "cd78d3deb829b79bf3fa4ee92207e3368e4062295892099873f85a3a08b0c997",
+      "source_path": "data/raw/official/basecol2025/CH3OH-A_H2-para_statetostate_ID581_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 6604,
+      "path": "data/raw/official/basecol2025/CH3OH-A_IDT464_vt1_IDC580_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "dagdigian2024-h2 BASECOL V1 2025-07",
+      "sha256": "d6b782f4a5ec31b8fbc49f4e5b95efa28e0bcb0d7c7cb6c2568af33cad68999f",
+      "source_path": "data/raw/official/basecol2025/CH3OH-A_IDT464_vt1_IDC580_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 633200,
+      "path": "data/raw/official/basecol2025/CH3OH-E_H2-ortho_statetostate_ID576_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "dagdigian2024-h2 BASECOL V1 2025-07",
+      "sha256": "f3743bb4ae009daca9faeac72872960d231d09233c47abef4ea1f69a31af3b9e",
+      "source_path": "data/raw/official/basecol2025/CH3OH-E_H2-ortho_statetostate_ID576_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 633200,
+      "path": "data/raw/official/basecol2025/CH3OH-E_H2-para_statetostate_ID578_v1.kij",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "dagdigian2024-h2 BASECOL V1 2025-07",
+      "sha256": "9d87d1f5a73b4cc52c65c88253afaee544671a2a6fd204592bf66abc48d91237",
+      "source_path": "data/raw/official/basecol2025/CH3OH-E_H2-para_statetostate_ID578_v1.kij",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 6608,
+      "path": "data/raw/official/basecol2025/CH3OH-E_IDT462_vt1_IDC576_vc1.lev",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "dagdigian2024-h2 BASECOL V1 2025-07",
+      "sha256": "14b6df8280642e537720f6c29a3ae6c67f5a5dd08bd44956734c11bb2db96d46",
+      "source_path": "data/raw/official/basecol2025/CH3OH-E_IDT462_vt1_IDC576_vc1.lev",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 2455460,
+      "path": "data/raw/third-party-mirror/hitran2004-ch3oh-950-1300/ch3oh-950-1300.hitran2004",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "Xu2004 V7/V8 line list",
+      "sha256": "869425f73465fef72a5f087ff88047edcc557350cbde1d64a9658e8ef45945b5",
+      "source_path": "data/raw/third-party-mirror/hitran2004-ch3oh-950-1300/ch3oh-950-1300.hitran2004",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 443,
+      "path": "isotopologues/13ch3oh/config/observed-frequencies.json",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "isotope observed-frequency selection",
+      "sha256": "cda96289b0d626aa0d049a9cf41401c1bc3012f414df80e828486f4e85c2bc18",
+      "source_path": "isotopologues/13ch3oh/config/observed-frequencies.json",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 1813,
+      "path": "isotopologues/13ch3oh/constants/table2-2014-constants.txt",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "Xu2014",
+      "sha256": "f364231a8bba9a72749d39a53608cdf6f04b8b78f457800539d62933f2eb6d0a",
+      "source_path": "isotopologues/13ch3oh/constants/table2-2014-constants.txt",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 286400,
+      "path": "isotopologues/13ch3oh/data/raw/official/cdms-033502/c033502.cat",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "CDMS 033502 observed isotope frequencies",
+      "sha256": "3ab90230817e6c31902e6ed672afce4865847c2c68bfc356ae583c86778861f5",
+      "source_path": "isotopologues/13ch3oh/data/raw/official/cdms-033502/c033502.cat",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 2380,
+      "path": "isotopologues/13ch3oh/data/raw/transcribed/mukhopadhyay1995-co-stretch.json",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "Mukhopadhyay1995 CO model",
+      "sha256": "eeca7f2fcd8de61bed35bdc9a19e2d66412f642b3fd844aa81a66980913f3a98",
+      "source_path": "isotopologues/13ch3oh/data/raw/transcribed/mukhopadhyay1995-co-stretch.json",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 1402,
+      "path": "isotopologues/13ch3oh/data/raw/transcribed/predoi-cross1997-ch3-rock-origins.json",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "PredoiCross1997 rock model",
+      "sha256": "7aa4295bd8227ee08abb972392b1cbad748b839f0c08f626ff026078c12325fe",
+      "source_path": "isotopologues/13ch3oh/data/raw/transcribed/predoi-cross1997-ch3-rock-origins.json",
+      "source_root": "resource"
+    },
+    {
+      "bytes": 4944229,
+      "path": "observations/repaired-observed-frequency-map.json",
+      "redistribution": "not-cleared-by-this-package",
+      "role": "Accepted Xu2008 observation crosswalk",
+      "sha256": "5f15238fa8a8283e0eeeac213dfe374c22c80ce56ac47f5bb5e24b1a68ec8736",
+      "source_path": "xu-direct-validation/repaired-observed-frequency-map.json",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 1696,
+      "path": "vendor/belgi/ad3j.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "387046dc4d2335d13db1945138fb0185452f351ac7a2d6eaa02e9c9e6cf59c8f",
+      "source_path": "worktree/vendor/belgi/ad3j.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2457,
+      "path": "vendor/belgi/aset.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "72dff5a911681415ca67bf036abd5a3b921bed99965727183604bbbb6c907063",
+      "source_path": "worktree/vendor/belgi/aset.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 238,
+      "path": "vendor/belgi/blockdata.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "7e5898e5bd959690b8507932865be4762bef91bc10110e7fd6a3aba3201c357d",
+      "source_path": "worktree/vendor/belgi/blockdata.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 6470,
+      "path": "vendor/belgi/cntrl.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "38e7e2d9b3218aea1ab579188b3096b5c51c5229f2b741a206021b74c4a0f382",
+      "source_path": "worktree/vendor/belgi/cntrl.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 277,
+      "path": "vendor/belgi/common_big2.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "3d22b4328c0b322f4b68799c14230352aa0eaf8b388b20658e80ebb0806f0494",
+      "source_path": "worktree/vendor/belgi/common_big2.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 70,
+      "path": "vendor/belgi/common_c2c.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "d01d5691bb07bc80d97139af52f973ea0223bca7c6c96e329e0d1a731072f8af",
+      "source_path": "worktree/vendor/belgi/common_c2c.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 188,
+      "path": "vendor/belgi/common_chara.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "c43f538344c6a8c59cc15a3bd98208b07fe24422f8491bbb7d69de688997ec85",
+      "source_path": "worktree/vendor/belgi/common_chara.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 435,
+      "path": "vendor/belgi/common_cntl.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "4b501d2a43639a23ba6b61c2100179e7fc44d901051c7822a82c42e3f6a4d22f",
+      "source_path": "worktree/vendor/belgi/common_cntl.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 208,
+      "path": "vendor/belgi/common_consts.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "25db63cb3ff76d2e22d7214f5fb9597dee3bee04f7dd9622b877fb292c6f4cd9",
+      "source_path": "worktree/vendor/belgi/common_consts.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 71,
+      "path": "vendor/belgi/common_cst.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "7581dbcaf738fbb8d7337b05d6776f93a3908a6e7091047fe07de3abb23bb49a",
+      "source_path": "worktree/vendor/belgi/common_cst.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 100,
+      "path": "vendor/belgi/common_cstdim.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "87d90b3cd14d84cb3d92e6720ecee40cf90eba404ab8597e3927f46a56078257",
+      "source_path": "worktree/vendor/belgi/common_cstdim.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 7288,
+      "path": "vendor/belgi/common_cste.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "6b842fcb6b2337e325ca97651b28f4f2ff654ebc41964426fc84b7ebf601eda8",
+      "source_path": "worktree/vendor/belgi/common_cste.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 277,
+      "path": "vendor/belgi/common_dat.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "00b0da4018daea211fdc78ba8cefea74d5fcb9394f3b731c435085ccb3cdc200",
+      "source_path": "worktree/vendor/belgi/common_dat.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 444,
+      "path": "vendor/belgi/common_dim.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "8fd4a26b537d591891367ac48eeda13ec2c34b2aebf06d0fc77626ed9e388833",
+      "source_path": "worktree/vendor/belgi/common_dim.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 453,
+      "path": "vendor/belgi/common_eigen.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "242b999f924ecbb105007e79a9f06f1a507c4e688faf2933c32844351fca2a99",
+      "source_path": "worktree/vendor/belgi/common_eigen.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 86,
+      "path": "vendor/belgi/common_eigen1.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "c33b0e52c2ebaa42f2f88f91ddd02d72ddffd5a7ea258ec95c776eb9f3b12f8b",
+      "source_path": "worktree/vendor/belgi/common_eigen1.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2348,
+      "path": "vendor/belgi/common_expdat.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "ee58e62888c42a0894d5e514a9601c9b43f9247ef908755bcc0815c3b590a40d",
+      "source_path": "worktree/vendor/belgi/common_expdat.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 29,
+      "path": "vendor/belgi/common_facts.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "865b6c7af9985134c5fbe1405c1b577f108ca0fe2f88ba8ff6d7182aa652a3c7",
+      "source_path": "worktree/vendor/belgi/common_facts.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 94,
+      "path": "vendor/belgi/common_int.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "6fc76ee4a47e788195cf38dd88ac0d3e138ae087defad2ab738f0542f501f76e",
+      "source_path": "worktree/vendor/belgi/common_int.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 145,
+      "path": "vendor/belgi/common_par.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "093a41b0dfbc083d2d56e17f2bde6a14f5c8b8cefdb9660627dabd9b77da5efc",
+      "source_path": "worktree/vendor/belgi/common_par.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 179,
+      "path": "vendor/belgi/common_quant.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "096e371101f3b3cbfabbfd3794837266516e1af8b4564c1af9edeff1c0f5abf5",
+      "source_path": "worktree/vendor/belgi/common_quant.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 130,
+      "path": "vendor/belgi/common_rotor.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "72bbed9e068d202a7997cc34dfcd23b0380320de2f4102d63467ed1f23c36d85",
+      "source_path": "worktree/vendor/belgi/common_rotor.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 81,
+      "path": "vendor/belgi/common_rottor.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "e90ca87f007315e31cb8beb149bc3f2727381142519e4246aae51f7adb7bdd86",
+      "source_path": "worktree/vendor/belgi/common_rottor.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 47,
+      "path": "vendor/belgi/common_symb.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "0465595d564668bce658aa12182a3715cdc07812c584fffa663a03425c3430ba",
+      "source_path": "worktree/vendor/belgi/common_symb.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 83,
+      "path": "vendor/belgi/common_tor.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "64ddb777947ec7745598e6c76442b8a28dedf14ff523b117eb81c20c6420bfe4",
+      "source_path": "worktree/vendor/belgi/common_tor.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 76,
+      "path": "vendor/belgi/common_tor59.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "9219e589cf881eb3220824950a331c958586045e458db2552aa750a31aff917c",
+      "source_path": "worktree/vendor/belgi/common_tor59.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 3256,
+      "path": "vendor/belgi/common_vrtd.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "9dc2917537c914fc04b5d9fa7fa5e6bc52c7782d9bf43447f2be61740a7446ff",
+      "source_path": "worktree/vendor/belgi/common_vrtd.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2735,
+      "path": "vendor/belgi/common_vset.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "e452b794cf3219d5148788e6ddb58f656be85fc8ea1b8cb09e3ece96b85c8b9f",
+      "source_path": "worktree/vendor/belgi/common_vset.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 26458,
+      "path": "vendor/belgi/data.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "6436a4ad930bef0707b4019894fbd5d0a8b3ec2b953ee750d2fca572830ab486",
+      "source_path": "worktree/vendor/belgi/data.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 17157,
+      "path": "vendor/belgi/data1.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "d5c4aa93b5e6aa7c8fb62d4224f2b5a248855181083e1f6798b7b1fe195e7163",
+      "source_path": "worktree/vendor/belgi/data1.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 14721,
+      "path": "vendor/belgi/data11.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "5700b254e0282a805c95add7d4e78f8557f2034d355efdd26a8223741e3faed7",
+      "source_path": "worktree/vendor/belgi/data11.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 4322,
+      "path": "vendor/belgi/encal.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "51ddd613b275da61d3669b7269744372b237819251ba88729d889e119932b02e",
+      "source_path": "worktree/vendor/belgi/encal.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 3026,
+      "path": "vendor/belgi/encal2.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "0e6854b24cd748104617c0fc7068936e15c68f11f698c071e076af6a55938efd",
+      "source_path": "worktree/vendor/belgi/encal2.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2235,
+      "path": "vendor/belgi/expectation.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "11eff872ea1fbb90b1bed0a1b7864fc3d1096492858bb6e8baae62ae9674f110",
+      "source_path": "worktree/vendor/belgi/expectation.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 756,
+      "path": "vendor/belgi/factt.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "4d0a295daa582a53db217ce4ec47960a6f1cf652478a3f13f887c6085e8fef98",
+      "source_path": "worktree/vendor/belgi/factt.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 67789,
+      "path": "vendor/belgi/globalfit.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "8540eaf21f856a1c2e9957e9b080c1d59fb3c0da1254089bf5ef217f29900cca",
+      "source_path": "worktree/vendor/belgi/globalfit.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 60581,
+      "path": "vendor/belgi/h.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "60ba202d1d4fa49bb60fc5cdc5bcf5a588e7713b4a18aa2c564dfaedab4559a6",
+      "source_path": "worktree/vendor/belgi/h.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 5134,
+      "path": "vendor/belgi/hrtset.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "2fcba3c102d9898914459b47388c0f36cb959007da390f14c60fb5836036ae3f",
+      "source_path": "worktree/vendor/belgi/hrtset.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 5948,
+      "path": "vendor/belgi/htorse.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "8a24301c4bb2102c8d46d9900a0ab37b28b5d0c277f25432786b065b80b95479",
+      "source_path": "worktree/vendor/belgi/htorse.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 20132,
+      "path": "vendor/belgi/inten.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "4719669139153f9ae7ee7e71293391e4d0a9ae502d316ba50104cddfb27248ed",
+      "source_path": "worktree/vendor/belgi/inten.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 4614,
+      "path": "vendor/belgi/iposa.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "d5eafb8cfbfab7bffc940fbe430e7283cb4e9e7a8635de69686d74b9a4cfeb39",
+      "source_path": "worktree/vendor/belgi/iposa.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 5307,
+      "path": "vendor/belgi/ipose.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "ad0ddec2455d19faedea79fea7f332195e2d3c80e6ca2e69539a5c3a7c1ed84e",
+      "source_path": "worktree/vendor/belgi/ipose.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 1198,
+      "path": "vendor/belgi/irep.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "5f2a5b4a1390796200a26caada11c31f5c0b42f2da1c37878aa6c809c010bfa4",
+      "source_path": "worktree/vendor/belgi/irep.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 100007,
+      "path": "vendor/belgi/lineca.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "243b990d12f828a560476516c782fec37b2fbaccb9b5abe6094a2ed6c1c5de7f",
+      "source_path": "worktree/vendor/belgi/lineca.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 4743,
+      "path": "vendor/belgi/matout.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "e36ad9cb56640b6c8439df77b955c668035c9da0f146c9ba3e244fe1added369",
+      "source_path": "worktree/vendor/belgi/matout.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2578,
+      "path": "vendor/belgi/param.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "044b89b65936d5d8f293f6fbfd456a6197974e587c734ebac65a7c4724b3e34c",
+      "source_path": "worktree/vendor/belgi/param.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 3326,
+      "path": "vendor/belgi/parity.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "efa7d2f62691d2daecbccee0ac699c458096077054cd7243e7bc810c2953647a",
+      "source_path": "worktree/vendor/belgi/parity.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2666,
+      "path": "vendor/belgi/printderivl.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "b4a560e6850560469ec6a933b1b53198554e015f363c9231c71ba1dd841c52f3",
+      "source_path": "worktree/vendor/belgi/printderivl.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2580,
+      "path": "vendor/belgi/printener.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "fab0d2f6a565762ae36f1cbf8e6bcd1f0c1a208d9502ad85aeed56f64073e21b",
+      "source_path": "worktree/vendor/belgi/printener.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 687,
+      "path": "vendor/belgi/pythag.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "34cd272f0436dfa6482e087c1aff6b70d29f666756c9f3739ca43b00cfca5c93",
+      "source_path": "worktree/vendor/belgi/pythag.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 2320,
+      "path": "vendor/belgi/rejec.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "ee8939ee9c250d0672d1d5b68528975797539b5989eb841e85b44bf83822ed4f",
+      "source_path": "worktree/vendor/belgi/rejec.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 9574,
+      "path": "vendor/belgi/resum.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "ccf0670e5b0ee2809c653bb4d7810236b39f971c45f45427926b5a7aac4f9610",
+      "source_path": "worktree/vendor/belgi/resum.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 9598,
+      "path": "vendor/belgi/rottor.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "6e68e573e865d00c61bd19122dd078bcffb88eaed66dac97fe9e30bbb643aebf",
+      "source_path": "worktree/vendor/belgi/rottor.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 644,
+      "path": "vendor/belgi/rule.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "bcbfa8911437eb4a36fceff43cee3ebcb2db9663ea40d74cf21041b9bcbb048c",
+      "source_path": "worktree/vendor/belgi/rule.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 16493,
+      "path": "vendor/belgi/setup.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "2cbd8781b54ca003c5dff807d238e4a41498f08561620bd28e88e940502a1361",
+      "source_path": "worktree/vendor/belgi/setup.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 139572,
+      "path": "vendor/belgi/vrtdi.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "06067de05bcaf02caf7ad76d068d83a2179af1e49e99e476e933dd07aac116a6",
+      "source_path": "worktree/vendor/belgi/vrtdi.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 47686,
+      "path": "vendor/belgi/vset.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "176f69abbb5707a9db5e52158627e2d8564f009f8b03a3602eafb60482a93a14",
+      "source_path": "worktree/vendor/belgi/vset.f",
+      "source_root": "repair"
+    },
+    {
+      "bytes": 6670,
+      "path": "vendor/belgi/vtors.f",
+      "redistribution": "permission-unresolved",
+      "role": "BELGI native Hamiltonian source",
+      "sha256": "c216c7db9818fece4a02e607a4524099edcf407ef77d9cbb111a56d2635c8355",
+      "source_path": "worktree/vendor/belgi/vtors.f",
+      "source_root": "repair"
+    }
+  ],
+  "format_version": 1,
+  "normalized_collision_sha256": "39a392fd1a7cc4dd5b797f0225749881edf7fe2826de0912e222b6d33c5fb9fe"
+}

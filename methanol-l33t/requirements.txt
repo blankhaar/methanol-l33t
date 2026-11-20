@@ -1,0 +1,3 @@
+# Python 3.11+ standard library for the released generation path.
+# Native spectroscopy additionally needs gfortran and LAPACK/BLAS
+# (Apple Accelerate on macOS). No pip package is required for generation.

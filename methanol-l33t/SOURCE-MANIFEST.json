@@ -1,0 +1,413 @@
+{
+  "version": "1.0",
+  "product": "l33t-v3",
+  "locked_inputs_included": false,
+  "scope": "public source distribution",
+  "files": [
+    {
+      "path": "methanol-l33t/.gitignore",
+      "bytes": 89,
+      "sha256": "c7bc340a2eae7bc5c900f3a970dc4453e99a6142bc08623cd74cca135003e22a"
+    },
+    {
+      "path": "methanol-l33t/CITATION.cff",
+      "bytes": 1158,
+      "sha256": "3536394a088921194102b691a78879b05ef5460bb52f2a1ccef7210d3709eabd"
+    },
+    {
+      "path": "methanol-l33t/LICENSE",
+      "bytes": 13542,
+      "sha256": "a85803978cca972fc672b7b6dc3cad4b525e7dbafa85f01fdc81b31ada16704c"
+    },
+    {
+      "path": "methanol-l33t/LICENSE-NOTICE.md",
+      "bytes": 2115,
+      "sha256": "12243d4c90ab83c1219b2ab7353d83026fcef5734f7bdeae80ea825e64a75132"
+    },
+    {
+      "path": "methanol-l33t/README.md",
+      "bytes": 15646,
+      "sha256": "ed86064997ee8189df40730a3bec3b5fd84558e2c3a460354a2c6f5911bff45c"
+    },
+    {
+      "path": "methanol-l33t/docs/INPUTS.md",
+      "bytes": 4201,
+      "sha256": "11d2d308763b7f9d15f5a8f5a064ddc5168e6fbf72298ac74bdc2d49a2eb8996"
+    },
+    {
+      "path": "methanol-l33t/docs/REVIEW.md",
+      "bytes": 6793,
+      "sha256": "aca7bc5f207baa2adbf119ced59d56c48890c87e25bb1ef1e6521c88d5b0b52f"
+    },
+    {
+      "path": "methanol-l33t/docs/SOURCE-TERMS.md",
+      "bytes": 2322,
+      "sha256": "620131d014baa92dfc3cd5ef90a918187a5bb5cea83921e17ca31514658b8cbd"
+    },
+    {
+      "path": "methanol-l33t/docs/companion.pdf",
+      "bytes": 354837,
+      "sha256": "c3d914b5ed83ce945b848c15d6eba0615ae454b81f3983fb018395634a08d4be"
+    },
+    {
+      "path": "methanol-l33t/docs/companion.tex",
+      "bytes": 28661,
+      "sha256": "450c7da03003e3da0c9e3e01de309de2d29fe84166c857ddfb1c20eafff488da"
+    },
+    {
+      "path": "methanol-l33t/docs/doi-metadata-verification.json",
+      "bytes": 2941,
+      "sha256": "4d548b011165ca4706b27bb9de9489e0902739a91b9ad8b13c96f7b6b3ed8ea6"
+    },
+    {
+      "path": "methanol-l33t/docs/references.bib",
+      "bytes": 4607,
+      "sha256": "adf9b8e37633bee3baa0258e1dc1f4947bc61a0f0dc99c014678e9e05df893bb"
+    },
+    {
+      "path": "methanol-l33t/docs/references.provenance.json",
+      "bytes": 1581,
+      "sha256": "eeb828e8f71fdd6500027c7f078d68f5cb8eb73c14815fb027892a3e0b2d0f60"
+    },
+    {
+      "path": "methanol-l33t/fortran/belgi_frozen_levels.f",
+      "bytes": 4456,
+      "sha256": "961788b5d36ed437bbd105b7d38efc201eccea5bbff010ef03de78650c004d65"
+    },
+    {
+      "path": "methanol-l33t/fortran/belgi_frozen_strengths.f",
+      "bytes": 13380,
+      "sha256": "80ff84070f33f5c247b2cc696357df49fcb47ae11e41e385d09f2dd766f3f119"
+    },
+    {
+      "path": "methanol-l33t/fortran/cached_dipole_repair.f90",
+      "bytes": 4729,
+      "sha256": "4398edfe38dbaa63e6748f73d6db4138a8a3514a165274096d3eecf0f66f4e52"
+    },
+    {
+      "path": "methanol-l33t/fortran/cached_inten.f",
+      "bytes": 1446,
+      "sha256": "d176249c6509ce9966e6a3de11f6a964c11e654799e952f3ed33a6ba4c1dbced"
+    },
+    {
+      "path": "methanol-l33t/fortran/parity_state_repair.f90",
+      "bytes": 11360,
+      "sha256": "8e82c0efdafd8aa75ce2bb045a04228017f8dfa39c0db99a39a5fb6bb18745b6"
+    },
+    {
+      "path": "methanol-l33t/provenance/adoption.json",
+      "bytes": 1110,
+      "sha256": "01024a5a5aab9ce3b2646634c8c9fa75a73e4f27a4de863d3bc3d8ea8e0a869c"
+    },
+    {
+      "path": "methanol-l33t/provenance/collider-coverage.json",
+      "bytes": 15603,
+      "sha256": "82e766a69427f7d06a5996438377c25517c5f7ff12340cfe4d35321f5c0a01db"
+    },
+    {
+      "path": "methanol-l33t/provenance/inputs.lock.json",
+      "bytes": 37067,
+      "sha256": "e381edb99ea7ae990c191ddf85e9e5af2a6b92fcf9f338f7ef2842e72344fcf2"
+    },
+    {
+      "path": "methanol-l33t/provenance/native-cache-validation.json",
+      "bytes": 9426,
+      "sha256": "388c6b8aa0d90e33ff8755785b14979347cee21338b4b12121ff119d9a0b754f"
+    },
+    {
+      "path": "methanol-l33t/provenance/prior-validation.json",
+      "bytes": 2831,
+      "sha256": "7aef00a18be6d2e9d2072bfeaf92a7ef8de67311dbd1d2dc09ac1318a22ad957"
+    },
+    {
+      "path": "methanol-l33t/provenance/products.json",
+      "bytes": 11455,
+      "sha256": "bc537af07e5049845fe9cd344d9b97c446f3dab0da0aa8a628f52ade3d796eb0"
+    },
+    {
+      "path": "methanol-l33t/provenance/source-lineage.json",
+      "bytes": 22265,
+      "sha256": "c8acbc2a6e83e415ff8f74ed0214ce379eb2ddf5e36331229054af86e8c06890"
+    },
+    {
+      "path": "methanol-l33t/provenance/validation.json",
+      "bytes": 12125,
+      "sha256": "03a450a61f579884ea602bf61a77136d70fa8efa6b70b4ebede10dde0d6c55f4"
+    },
+    {
+      "path": "methanol-l33t/provenance/zero-rate-coverage.json",
+      "bytes": 5449,
+      "sha256": "81dfcdb404cf1489f93f30b5ff0d4455fad3851562c47693130dc5a4610bf53c"
+    },
+    {
+      "path": "methanol-l33t/requirements.txt",
+      "bytes": 206,
+      "sha256": "a79257110c3783010b2ce38b216136f00a1e09b6b8417b28b2d56aa115463846"
+    },
+    {
+      "path": "methanol-l33t/scripts/build_l33t.py",
+      "bytes": 32545,
+      "sha256": "b5748c8e57dc0b97f077c86c25b0924c12b72c72de86287075f3aa9e2890eee1"
+    },
+    {
+      "path": "methanol-l33t/scripts/candidate_export.py",
+      "bytes": 4890,
+      "sha256": "238f3e5c08cd52323b25db80c186a0c60ad6dcb2c6a5b0edfdda0dcaee3f5307"
+    },
+    {
+      "path": "methanol-l33t/scripts/check_native_cache.py",
+      "bytes": 4163,
+      "sha256": "2d9f753f202a4ab8d6e2bc5848d3a9843b8220e84b7213485e4945048525a92f"
+    },
+    {
+      "path": "methanol-l33t/scripts/export_source.py",
+      "bytes": 3359,
+      "sha256": "01c20c932666d1c710b4f3889d8ae4bdbff027832365f2c0acdef5c95ca8eb91"
+    },
+    {
+      "path": "methanol-l33t/scripts/highj_scheme_v2.py",
+      "bytes": 8614,
+      "sha256": "e6651d1126ce7ef016fb2c423982c67fed060ab547857a111946f1e6e4cae32d"
+    },
+    {
+      "path": "methanol-l33t/scripts/hybrid_e_lowj.py",
+      "bytes": 6547,
+      "sha256": "a51bd88e632829da8cc716f533b20d4d3e06f270692d5f76c41632f277379155"
+    },
+    {
+      "path": "methanol-l33t/scripts/l33t.py",
+      "bytes": 14045,
+      "sha256": "cde9d4eba991507122ec35635774038de28a8ca9b26536e586275c911635272e"
+    },
+    {
+      "path": "methanol-l33t/scripts/reapply_source_frequency_policy.py",
+      "bytes": 1757,
+      "sha256": "e00749f1c3b4dad78c534458720808988317fdc114d5bb76c1760fe9e1d91b66"
+    },
+    {
+      "path": "methanol-l33t/scripts/review_support.py",
+      "bytes": 7232,
+      "sha256": "2733c0fde98e4c66160a0d5cee94875dba322859fe01d4011b047c8f3bb2f508"
+    },
+    {
+      "path": "methanol-l33t/scripts/spectroscopy.py",
+      "bytes": 11060,
+      "sha256": "0a4ff59cc3c8810cdfc0591d4725577698576c6ea1335ba9a650248f76591e16"
+    },
+    {
+      "path": "methanol-l33t/scripts/validate_products.py",
+      "bytes": 5554,
+      "sha256": "e34ec133a5302151187e3a5108cd742c01951b03c448f709b60aec7cc1ec57df"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/__init__.py",
+      "bytes": 304,
+      "sha256": "3c304726e832c4679ec681857e25e2c559b50d7ab1aa5718721ca5333ae11ef2"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/basecol.py",
+      "bytes": 11941,
+      "sha256": "8b1daa9a3ce6a4e63a10c4de0c99d29212b243b3b439568247baaab1e1d75f25"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/build.py",
+      "bytes": 52713,
+      "sha256": "3adffd76c11e93160092fee10a21599e68b19cfb9c063d48ea04545c0f6d675c"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/catalog.py",
+      "bytes": 2368,
+      "sha256": "3904931d8b85c7ff426cb675e91c3d0faf5c4c0e9957d2343daedff9c08853d6"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/ch3_rock.py",
+      "bytes": 30851,
+      "sha256": "941b36e30b89401a6c75173527150d9db039584f1f10a0eb38e848276c3bd844"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/cli.py",
+      "bytes": 10421,
+      "sha256": "0088a1e00d280ceda6af463331e4d20b2e3841eb0739538c013fa4ec9691c4d0"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/co_stretch.py",
+      "bytes": 37681,
+      "sha256": "a0231a6dac4c4b7d3cea2a5e9b8361e8488118d003961ce32fe3cb9278eb3310"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/collision_integrity.py",
+      "bytes": 15691,
+      "sha256": "db47522441fe2ffe4fdd7697a008c2fbf2a47031062165895651937adb273b5a"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/extended.py",
+      "bytes": 24881,
+      "sha256": "5c4dfc05ae4d035d703aa03830fe7c1b755c68d59b0386475d7d4c1acd8c3c09"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/fetch.py",
+      "bytes": 9213,
+      "sha256": "2616fd9ab84b39dc7abb7b4810fef3bcccaa227fe3da204cdf3e2928bce825a6"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/hamiltonian.py",
+      "bytes": 31715,
+      "sha256": "475ec7308154037c6ee15ecc1927eda54b2f5d39ad8e1a78789fa64a57074d7a"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/he_build.py",
+      "bytes": 19560,
+      "sha256": "33580d531bceff45cfd740e6b82e47ab5ddeeb1a96ae39dfe1dee066176ba959"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/independent.py",
+      "bytes": 2969,
+      "sha256": "f2708e4cb30921244d0ffb9df9f7123062b17876f646cca9972c7dfda041e14f"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/integrity.py",
+      "bytes": 4428,
+      "sha256": "3a54771db2499ab72168de04ad011ded3101907e27ca3d921e0f0fbc1e5ebb9c"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/__init__.py",
+      "bytes": 54,
+      "sha256": "b1ccae34ed2e62f526ef43df1eb9a878936a25f22a302cffd1958baf7ea30adc"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/__init__.py",
+      "bytes": 1705,
+      "sha256": "1f0e3d292a632010f907dcf7a507bc52e91f15a84e945a27af29e10a5b52a73c"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/__main__.py",
+      "bytes": 49,
+      "sha256": "0f7d54f3fbb1f79a85eb8110f11793db99da6f3c61ee979de5abe9a1b5f3fdb3"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/build.py",
+      "bytes": 42601,
+      "sha256": "77489bb961f59e699072db7fd8fc1da725333d9ad4c256c38f30e8616560e0a6"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/cdms.py",
+      "bytes": 16524,
+      "sha256": "75cfe3cb2ac1067271dd24c870bd47b66a322db1b91748a9e47e421a89ec26a6"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/cli.py",
+      "bytes": 3141,
+      "sha256": "5cc67d3ed8634aee745e2ab3491a62c97e6de69fe6585ea48db3559da4e66d8a"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/collisions.py",
+      "bytes": 7992,
+      "sha256": "451457efd7adf8f0b09f5ca635cd9bfdb78a3d9c8267ae4310fa8ed14e50aec5"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/extended.py",
+      "bytes": 18058,
+      "sha256": "c6cc913f20c5187f35b13409aa8a0d294f68dce3d5349f4e8f2f1bb7008bf816"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/he150.py",
+      "bytes": 47297,
+      "sha256": "91668cd94c22297a070cca7b3f5d41ce7476357abd4e6bfd72beb1c3832587c6"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/isotopologues/ch3oh13/profile.py",
+      "bytes": 6601,
+      "sha256": "ea3fad09c9cbd566d74952e5745f66095941cc91df7a0bb6817d11a982e4a49c"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/lamda.py",
+      "bytes": 11120,
+      "sha256": "4decaa8641ebb5c4095133bf02b49db02c9a0324d1bbd8dd0db0a56fea3a6452"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/models.py",
+      "bytes": 1097,
+      "sha256": "17af74471891956949478044a20c47e159a81314cfd478ad0fcbc0dfb90a591c"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/normalize.py",
+      "bytes": 35310,
+      "sha256": "5a51308a96ea5c84673efbda8043914edcb52bef65a40a1a591f8c832e56c923"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/observed.py",
+      "bytes": 7185,
+      "sha256": "364aab597632a30bc9d6b61e6ddde5ad07ea546ceab11474cb0cc02210564872"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/parity_repair.py",
+      "bytes": 6392,
+      "sha256": "52f70e49cfafaaac2f105464404ef48d9322eaf3be1596b85565afbab8ee0859"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/paths.py",
+      "bytes": 912,
+      "sha256": "d86b662f6009d4d0d40fa330170331cd0b39b914c1513e0e2c57b5acafccb9a6"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/physics.py",
+      "bytes": 6485,
+      "sha256": "b9ca7071034ca2540597152ff4ec590eda90db15f2bdaf086fae65171311dec3"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/postbuild_audit.py",
+      "bytes": 56929,
+      "sha256": "3e51d34202299b5a7b9a98d1dafb155429e312d4d470370e0990042611b793c4"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/quantum.py",
+      "bytes": 2573,
+      "sha256": "2a7818619690bcc5dfc76949bb423f96b38816db0782aa88cadbf7084013abc5"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/radiative_integrity.py",
+      "bytes": 15923,
+      "sha256": "5bcafe9d12782023d61797f7974c9349455a4d5eeeb51ae28cf9f37b931c99b8"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/report.py",
+      "bytes": 21618,
+      "sha256": "a2bffa3ab09a25a68e3fe974c1a7093d28a86661a2ae0ba1832276892fde8a76"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/strengths.py",
+      "bytes": 41404,
+      "sha256": "b10d329c5d1fea87b38d4633b7620e2fcdb796f31b6ffe893e8d3649a45d0873"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/validate.py",
+      "bytes": 49175,
+      "sha256": "ac7c5127b43d2b0816832f3ac54aa02159df0219d70a8d410dbbd93fd13d374d"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/vibrational_revision.py",
+      "bytes": 20974,
+      "sha256": "50f87face4d10770b74bd2b80751bfd8c9e9989282d2bdc03b8860a821468b0f"
+    },
+    {
+      "path": "methanol-l33t/src/methanol_lamda/xu.py",
+      "bytes": 7169,
+      "sha256": "821d6ca1a17c771063ef65833421607d2076dc6836ebb0a7a52fcdb941c16097"
+    },
+    {
+      "path": "methanol-l33t/tests/test_release.py",
+      "bytes": 4413,
+      "sha256": "0db51b4bce1d57a541c00044f4e99b4e9c9dd7bd456973eade5d13c3f1feaa75"
+    },
+    {
+      "path": "methanol-l33t/tests/test_review.py",
+      "bytes": 9630,
+      "sha256": "f533020b1fe84eb321820fd9873d5e38d70a6a745b6b80de04a89e20a7b6564a"
+    }
+  ]
+}

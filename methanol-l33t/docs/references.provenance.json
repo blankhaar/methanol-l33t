@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-04",
+  "source": "Existing molecular-resource bibliography, entries copied rather than reconstructed from memory",
+  "keys": [
+    "Dagdigian2024",
+    "Mukhopadhyay_1995",
+    "PredoiCross1997",
+    "RabliFlower2010H2",
+    "RabliFlower2010He",
+    "RabliFlower2011",
+    "Sunaga_2026",
+    "XuEtAl2008",
+    "XuEtAl2014C13",
+    "Xu_2004",
+    "Hougen_1994"
+  ],
+  "warnings": [
+    "PredoiCross1997 thesis identity inherited from source record; no new library retrieval."
+  ],
+  "metadata_verification": "Eight DOI metadata responses plus publisher verification for RF2011; Dagdigian print issue year adjudicated from publisher. See doi-metadata-verification.json.",
+  "scripts_run": [
+    "bib_from_doi.py",
+    "cite_audit.py",
+    "validate_bib.py"
+  ],
+  "additions": [
+    {
+      "cite_key": "Hougen_1994",
+      "source_type": "DOI content negotiation, corroborated by NIST author-institution publication record",
+      "doi": "10.1006/jmsp.1994.1047",
+      "retrieval_date": "2026-11-04",
+      "primary_source_url": "https://www.nist.gov/publications/selection-rules-and-intensity-calculations-cs-asymmetric-top-molecule-containing-methyl",
+      "verified_fields": [
+        "authors",
+        "title",
+        "year",
+        "journal",
+        "volume",
+        "issue",
+        "pages",
+        "doi"
+      ],
+      "raw_metadata_sha256": "c5d86b722aa22bdfbf8fda35c1094667deb1c60ccf1a5b54ba7521791191f162",
+      "formatting_changes": "Protect Cs mathematical subscript in BibTeX; normalize page-range dash.",
+      "warnings": []
+    }
+  ]
+}

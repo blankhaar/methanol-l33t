@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "product_version": "l33t-v3",
+  "method": "Independent Claude scan of every DAT row joined to collision provenance, 2026-11-06. A row is all-zero only if all ten temperature coefficients are zero. Zero-node aggregates count temperatures; divide all-zero node counts by ten for row counts.",
+  "products": {
+    "a-12ch3oh-l33t-E2000-J46.dat": {
+      "unjoined_zero_rows": 0,
+      "counts": {
+        "2|all-zero|l33t-extrapolation|l33t-JK-extrapolated|no-hybrid": 166,
+        "2|all-zero|rabli-flower2010-h2-vt012|calculated|no-hybrid": 326,
+        "2|all-zero|rabli-flower2010-h2-vt012|vt0-identity-copy|no-hybrid": 633,
+        "2|all-zero|zero-nodes": 11250,
+        "6|all-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 353,
+        "6|all-zero|rabli-flower2010-he-vt012|vt0-identity-copy|no-hybrid": 881,
+        "6|all-zero|rabli-flower2011-he-torsion-changing|calculated|no-hybrid": 148,
+        "6|all-zero|zero-nodes": 13820,
+        "6|partial-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 1,
+        "6|partial-zero|rabli-flower2010-he-vt012|vt0-identity-copy|no-hybrid": 8,
+        "6|partial-zero|rabli-flower2011-he-torsion-changing|calculated|no-hybrid": 3,
+        "6|partial-zero|zero-nodes": 41
+      },
+      "distinct_source_pairs_all_zero_hybrid": {}
+    },
+    "e-12ch3oh-l33t-E2000-J46.dat": {
+      "unjoined_zero_rows": 0,
+      "counts": {
+        "2|all-zero|dagdigian2024-h2|calculated|hybrid": 37,
+        "2|all-zero|dagdigian2024-h2|vt0-identity-copy|hybrid": 296,
+        "2|all-zero|l33t-extrapolation|l33t-JK-extrapolated|no-hybrid": 49462,
+        "2|all-zero|rabli-flower2010-h2-vt012|calculated_source_grid_quarantined_180_200K|no-hybrid": 1592,
+        "2|all-zero|rabli-flower2010-h2-vt012|calculated|no-hybrid": 3866,
+        "2|all-zero|rabli-flower2010-h2-vt012|vt0-identity-copy|no-hybrid": 682,
+        "2|all-zero|zero-nodes": 559350,
+        "2|partial-zero|l33t-extrapolation|l33t-JK-extrapolated|no-hybrid": 6444,
+        "2|partial-zero|rabli-flower2010-h2-vt012|calculated|no-hybrid": 773,
+        "2|partial-zero|rabli-flower2010-h2-vt012|vt0-identity-copy|no-hybrid": 47,
+        "2|partial-zero|zero-nodes": 15476,
+        "3|all-zero|dagdigian2024-h2|calculated|hybrid": 37,
+        "3|all-zero|dagdigian2024-h2|vt0-identity-copy|hybrid": 370,
+        "3|all-zero|zero-nodes": 4070,
+        "6|all-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 2656,
+        "6|all-zero|rabli-flower2010-he-vt012|vt0-identity-copy|no-hybrid": 967,
+        "6|all-zero|rabli-flower2011-he-torsion-changing|calculated|no-hybrid": 144,
+        "6|all-zero|zero-nodes": 37670,
+        "6|partial-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 384,
+        "6|partial-zero|zero-nodes": 438
+      },
+      "distinct_source_pairs_all_zero_hybrid": {
+        "2": 37,
+        "3": 37
+      }
+    },
+    "a-13ch3oh-l33t-E2000-J46.dat": {
+      "unjoined_zero_rows": 0,
+      "counts": {
+        "2|all-zero|l33t-extrapolation|l33t-JK-extrapolated|no-hybrid": 166,
+        "2|all-zero|rabli-flower2010-h2-vt012|calculated|no-hybrid": 326,
+        "2|all-zero|rabli-flower2010-h2-vt012|vt0-identity-copy|no-hybrid": 633,
+        "2|all-zero|zero-nodes": 11250,
+        "6|all-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 353,
+        "6|all-zero|rabli-flower2010-he-vt012|vt0-identity-copy|no-hybrid": 881,
+        "6|all-zero|rabli-flower2011-he-torsion-changing|calculated|no-hybrid": 148,
+        "6|all-zero|zero-nodes": 13820,
+        "6|partial-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 1,
+        "6|partial-zero|rabli-flower2010-he-vt012|vt0-identity-copy|no-hybrid": 8,
+        "6|partial-zero|rabli-flower2011-he-torsion-changing|calculated|no-hybrid": 3,
+        "6|partial-zero|zero-nodes": 41
+      },
+      "distinct_source_pairs_all_zero_hybrid": {}
+    },
+    "e-13ch3oh-l33t-E2000-J46.dat": {
+      "unjoined_zero_rows": 0,
+      "counts": {
+        "2|all-zero|dagdigian2024-h2|calculated|hybrid": 37,
+        "2|all-zero|dagdigian2024-h2|vt0-identity-copy|hybrid": 296,
+        "2|all-zero|l33t-extrapolation|l33t-JK-extrapolated|no-hybrid": 50660,
+        "2|all-zero|rabli-flower2010-h2-vt012|calculated_source_grid_quarantined_180_200K|no-hybrid": 1592,
+        "2|all-zero|rabli-flower2010-h2-vt012|calculated|no-hybrid": 3866,
+        "2|all-zero|rabli-flower2010-h2-vt012|vt0-identity-copy|no-hybrid": 682,
+        "2|all-zero|zero-nodes": 571330,
+        "2|partial-zero|l33t-extrapolation|l33t-JK-extrapolated|no-hybrid": 6584,
+        "2|partial-zero|rabli-flower2010-h2-vt012|calculated|no-hybrid": 773,
+        "2|partial-zero|rabli-flower2010-h2-vt012|vt0-identity-copy|no-hybrid": 47,
+        "2|partial-zero|zero-nodes": 15764,
+        "3|all-zero|dagdigian2024-h2|calculated|hybrid": 37,
+        "3|all-zero|dagdigian2024-h2|vt0-identity-copy|hybrid": 370,
+        "3|all-zero|zero-nodes": 4070,
+        "6|all-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 2656,
+        "6|all-zero|rabli-flower2010-he-vt012|vt0-identity-copy|no-hybrid": 967,
+        "6|all-zero|rabli-flower2011-he-torsion-changing|calculated|no-hybrid": 144,
+        "6|all-zero|zero-nodes": 37670,
+        "6|partial-zero|rabli-flower2010-he-vt012|calculated|no-hybrid": 384,
+        "6|partial-zero|zero-nodes": 438
+      },
+      "distinct_source_pairs_all_zero_hybrid": {
+        "2": 37,
+        "3": 37
+      }
+    }
+  }
+}
